@@ -3,7 +3,7 @@ import React from 'react'
 // import Logo from './svg/Logo'
 
 const Footer = () => (
-  <footer className="footer" role="footer" aria-label="main footer">
+  <footer className="footer">
     <div className="content">
       
     </div>

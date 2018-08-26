@@ -6,4 +6,8 @@ $primary: $main-purple;
 $navbar-background-color: $main-purple;
 $footer-background-color: $main-purple;
 
-@import "~bulma";
+@import "~bulma/sass/utilities/_all";
+@import "~bulma/sass/base/_all";
+@import "~bulma/sass/components/navbar";
+@import "~bulma/sass/layout/footer";
+@import "~bulma/sass/elements/button";
