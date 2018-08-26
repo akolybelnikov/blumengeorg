@@ -38,7 +38,7 @@ const Layout = ({ children, data }) => (
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content={config.siteTitle} />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header />
         <div
           style={{
             margin: '0 auto',
