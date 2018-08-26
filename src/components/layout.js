@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import Footer from './footer'
 import './layout.css'
 import './bulma.scss'
 
@@ -34,12 +35,13 @@ const Layout = ({ children, data }) => (
           style={{
             margin: '0 auto',
             maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
+            padding: '3.0875rem 1.45rem',
+            minHeight: '80vh'
           }}
         >
           {children}
-        </div>       
+        </div>   
+        <Footer/>    
       </>
     )}
   />

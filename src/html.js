@@ -12,7 +12,7 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"/> {this.props.headComponents}
         </head>
-        <body {...this.props.bodyAttributes}>
+        <body className="has-navbar-fixed-top" {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
           <div
             key={`body`}
