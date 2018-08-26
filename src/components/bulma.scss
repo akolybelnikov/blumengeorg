@@ -1,10 +1,15 @@
 @import "~bulma/sass/utilities/initial-variables";
 
 $main-purple: #663399;
+$main-background: #000;
+$main-text: #fff;
 
 $primary: $main-purple;
 $navbar-background-color: $main-purple;
 $footer-background-color: $main-purple;
+
+$background: $main-background;
+$body-color: $main-text;
 
 @import "~bulma/sass/utilities/_all";
 @import "~bulma/sass/base/_all";
