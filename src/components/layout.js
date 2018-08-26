@@ -39,7 +39,7 @@ const Layout = ({ children, data }) => (
           }}
         >
           {children}
-        </div>
+        </div>       
       </>
     )}
   />
