@@ -7,11 +7,10 @@ import {graphql} from "gatsby"
 
 export default ({data}) => {
 
-    console.log(data.allContentfulProduct.edges)
     return (        
         <Layout>
             <div>
-                {data.allContentfulProduct.edges.map(edge => (
+                {data.allContentfulProduct && data.allContentfulProduct.edges.map(edge => (
                     <h1 key={edge.node.id}>{edge.node.tag[0].slug}</h1>
                 ))}
             </div>
