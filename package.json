@@ -6,6 +6,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^0.0.3-0",
     "bulma": "^0.7.1",
+    "delay": "^3.1.0",
     "gatsby": "^2.0.0-rc.0",
     "gatsby-plugin-manifest": "^2.0.2-rc.0",
     "gatsby-plugin-offline": "^2.0.0-rc.0",
@@ -21,6 +22,7 @@
     "react-helmet": "^5.2.0",
     "react-loading-screen": "^0.0.17",
     "react-responsive": "^5.0.0",
+    "react-spring": "5.3.8",
     "styled-components": "^3.4.5"
   },
   "keywords": [
