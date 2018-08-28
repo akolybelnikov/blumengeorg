@@ -51,6 +51,7 @@ const SlideMenu = props => {
           <div
             onClick={toggle}
             style={{
+            cursor: 'pointer',
             top: 10,
             right: 10,
             position: 'fixed'

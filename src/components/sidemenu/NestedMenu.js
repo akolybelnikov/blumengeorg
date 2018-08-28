@@ -5,7 +5,6 @@ import Link from 'gatsby-link'
 const Menu = styled.div`
   position: relative;
   width: 35%;
-  overflow-Y: scroll;
 `
 const MenuItem = styled.a`
   margin-bottom: 10px;
@@ -20,7 +19,7 @@ const SubMenu = styled.div`
   left: 43%;
   width: 35%;
   height: 100%;
-  overflow-Y: scroll;
+
   top: ${props =>
     props.openkey === 'color'
       ? '70px'
