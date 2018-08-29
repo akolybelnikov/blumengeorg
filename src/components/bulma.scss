@@ -1,17 +1,18 @@
 @import "~bulma/sass/utilities/initial-variables";
 
-$main-purple: #663399;
+$main-purple: rgba(101,55,148,1);
 $main-background: #000;
 $main-text: #fff;
+$secondary-purple: #776587;
 
 $primary: $main-purple;
 $navbar-background-color: $main-purple;
 $footer-background-color: $main-purple;
-
 $navbar-tab-hover-border-bottom-color: $main-purple;
-
 $background: $main-background;
 $body-color: $main-text;
+$link: $secondary-purple;
+$panel-item-border: none;
 
 @import "~bulma/sass/utilities/_all";
 @import "~bulma/sass/base/_all";
@@ -19,4 +20,5 @@ $body-color: $main-text;
 @import "~bulma/sass/layout/footer";
 @import "~bulma/sass/components/level";
 @import "~bulma/sass/components/menu";
+@import "~bulma/sass/components/panel";
 @import "~bulma/sass/elements/button";

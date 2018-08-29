@@ -1,10 +1,11 @@
 import React, { PureComponent, Fragment } from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import './menu.css'
 
-const Menu = styled.div`
-  position: relative;
-  width: 35%;
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
 `
 const MenuItem = styled.a`
   margin-bottom: 10px;
@@ -12,51 +13,13 @@ const MenuItem = styled.a`
     props.active ? 'rgba(133, 112, 153, 0.9)' : 'rgba(102,51,153,.8)'};
   color: ${props => (props.active ? 'white' : 'whitesmoke')};
   z-index: 1200;
-`
+` 
 const SubMenu = styled.div`
-  z-index: 500;
-  position: absolute;
-  left: 43%;
-  width: 35%;
-  height: 100%;
-
-  top: ${props =>
-    props.openkey === 'color'
-      ? '70px'
-      : props.openkey === 'occasion'
-        ? '130px'
-        : '10px'};
-  @media screen and (max-width: 413px) and (orientation: portrait) {
-    left: 45%;
-    top: ${props =>
-      props.openkey === 'color'
-        ? '70px'
-        : props.openkey === 'occasion'
-          ? '125px'
-          : '20px'};
-  }
-  @media screen and (max-width: 823px) and (orientation: landscape) {
-    left: 40%;
-    top: ${props =>
-      props.openkey === 'color'
-        ? '75px'
-        : props.openkey === 'occasion'
-          ? '135px'
-          : '15px'};
-  }
+  padding: 0 10px;
+  z-index: 1200;  
 `
-
-const SubmenuItem = styled.div`
-  font-size: 1em;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  background: rgba(133, 112, 153, 0.9);
-  margin-bottom: 3px;
-  @media screen and (min-width: 1024px) {
-    font-size: 2em;
-    padding: 20px 0;
-  }
+const SubmenuItem = styled(Link)`
+  margin-bottom: 5px;
 `
 
 const items = [
@@ -130,38 +93,37 @@ export default class NestedMenu extends PureComponent {
     const { openKey } = this.state
 
     return (
-      <Fragment>
+      <Container>
         {!visible ? null : (
-          <Fragment>
-            <Menu>
+          <Fragment>                 
+            <div>
               {items.map((item, i) => (
-                <MenuItem className="button is-medium is-primary is-fullwidth"
+                <MenuItem className="button is-primary is-fullwidth" 
                   onClick={this.onOpenChange}
                   key={item.key}
                   active={openKey === item.key}
-                >
-                  {item.title}
+                >               
+                  {item.title}              
                 </MenuItem>
-              ))}
-            </Menu>
+              ))} 
+            </div>           
             {openKey !== undefined ? (
-              <SubMenu openkey={openKey}>
-                <Fragment>
-                  {navitems[openKey].map(submenuitem => (
-                    <Link
-                      onClick={this.onNavigation}
-                      key={submenuitem.id}
-                      to={`/${submenuitem.title.toLowerCase()}/`}
-                    >
-                      <SubmenuItem>{submenuitem.title}</SubmenuItem>
-                    </Link>
-                  ))}
-                </Fragment>
+              <SubMenu className="panel slideInLeft">                  
+                {navitems[openKey].map(submenuitem => (
+                  <SubmenuItem
+                    className="panel-block button is-link"
+                    onClick={this.onNavigation}
+                    key={submenuitem.id}
+                    to={`/${submenuitem.title.toLowerCase()}/`}
+                  >
+                    {submenuitem.title}
+                  </SubmenuItem>
+                ))}                        
               </SubMenu>
-            ) : null}
+            ) : null}        
           </Fragment>
         )}
-      </Fragment>
+      </Container>
     )
   }
 }
