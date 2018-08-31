@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 
 import B from './svg/B'
 import L from './svg/L'
@@ -12,7 +12,7 @@ import R from './svg/R'
 
 const Letters = props => {
   return (
-    <Fragment>
+    <div style={{maxWidth: props.maxWidth, display: 'flex', maxHeight: '3.25rem'}}>
       <B width={props.width} fill={props.fill} />
       <L width={props.width} fill={props.fill} />
       <U width={props.width} fill={props.fill} />
@@ -25,7 +25,7 @@ const Letters = props => {
       <O width={props.width} fill={props.fill} />
       <R width={props.width} fill={props.fill} />
       <G width={props.width} fill={props.fill} />
-    </Fragment>
+    </div>
   )
 }
 
