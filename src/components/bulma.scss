@@ -1,6 +1,7 @@
 @import "~bulma/sass/utilities/initial-variables";
 
 $main-purple: rgba(101,55,148,1);
+$main-purple-light: rgba(101,55,148,.5);
 $main-background: #000;
 $main-text: #fff;
 $secondary-purple: #776587;
@@ -14,10 +15,17 @@ $body-color: $main-text;
 $link: $secondary-purple;
 $panel-item-border: none;
 $dropdown-item-active-background-color: $main-purple;
+$box-background-color: $main-purple-light;
+$box-padding: .8rem;
+$card-color: $main-text;
+$card-background-color: transparent;
+$card-content-background-color: $main-purple-light;
+$card-footer-border-top: none;
 
 @import "~bulma/sass/utilities/_all";
 @import "~bulma/sass/base/_all";
 @import "~bulma/sass/components/navbar";
+@import "~bulma/sass/components/card";
 @import "~bulma/sass/layout/footer";
 @import "~bulma/sass/layout/section";
 @import "~bulma/sass/components/level";
@@ -25,5 +33,7 @@ $dropdown-item-active-background-color: $main-purple;
 @import "~bulma/sass/components/panel";
 @import "~bulma/sass/elements/button";
 @import "~bulma/sass/elements/box";
+@import "~bulma/sass/elements/image";
 @import "~bulma/sass/elements/container";
 @import "~bulma/sass/grid/columns";
+@import "~bulma/sass/grid/tiles";

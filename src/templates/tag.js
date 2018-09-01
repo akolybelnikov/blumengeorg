@@ -1,19 +1,30 @@
 import React from 'react'
 import Layout from '../components/layout'
 import {graphql} from "gatsby"
+import ProductCard from '../components/Product/ProductCard'
+import './tag.scss'
 
-// const filter = require('lodash.filter')
-// const some = require('lodash.some')
-
-export default ({data}) => {
-
-    return (        
+export default({data}) => {
+    console.log(data)
+    return (
         <Layout>
-            <div>
-                {data.allContentfulProduct && data.allContentfulProduct.edges.map(edge => (
-                    <h1 key={edge.node.id}>{edge.node.tag[0].slug}</h1>
-                ))}
-            </div>
+            <section id="products-section" className="section">
+                {data.allContentfulProduct && data
+                    .allContentfulProduct
+                    .edges
+                    .map(edge => (
+                        <div 
+                          key={edge.node.id}
+                          className="product-section-item">
+                          <ProductCard
+                            priceS={edge.node.priceS}
+                            priceM={edge.node.priceM}
+                            priceL={edge.node.priceL}
+                            title={edge.node.name}
+                            fluid={edge.node.img.fluid} />
+                        </div>
+                    ))}
+            </section>
         </Layout>
     )
 }
