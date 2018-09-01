@@ -38,7 +38,7 @@ const DropdownMenu = props => {
       {listOpen && 
         <List className="dropdown-menu">
             {list.map(item => (
-              <Item className="navbar-item" key={item.id} to={`/${item.title.toLowerCase()}/`}>
+              <Item className="navbar-item" key={item.id} to={`/${item.title.toLowerCase()}/`} onClick={toggleList}>
                 {item.title}
               </Item>
             ))}

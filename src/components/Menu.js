@@ -55,17 +55,11 @@ class MenuBar extends PureComponent {
         return (
             <Fragment>
                 <DropdownMenu
-                    ref={node => {
-                    this.flowerNode = node;
-                }}
                     title="blume"
                     list={context.flower}
                     listOpen={this.state.blumeOpen}
                     toggleList={this.toggleBlume}/>
                 <DropdownMenu
-                    ref={node => {
-                    this.colorNode = node;
-                }}
                     title="farbe"
                     list={context.color}
                     listOpen={this.state.farbeOpen}
