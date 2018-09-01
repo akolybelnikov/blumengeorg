@@ -1,0 +1,18 @@
+#nested-menu-container {
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+}
+
+.nested-menu-item {
+  margin-bottom: 10px;
+  z-index: 1200;
+}
+
+#nested-menu-submenu {
+  padding: 0 10px;
+  z-index: 1200;
+}
+
+.nested-submenu-item {
+  margin-bottom: 5px;
+}

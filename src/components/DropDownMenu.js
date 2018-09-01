@@ -1,50 +1,26 @@
 import React from 'react'
-import styled from 'styled-components'
+import './DropDownMenu.scss'
 import Link from 'gatsby-link'
-
-const Wrapper = styled.div `
-  cursor: pointer;
-  min-width: 150px;
-
-`
-const HeaderTitle = styled.a `
-  color: white !important;
-  :hover {
-    color: #663399 !important;
-  }
-  min-width: 150px;
-`
-const List = styled.div `
-  position: absolute;
-`
-const Item = styled(Link)`
-  color: white !important;
-  background: rgba(101,55,148,.7);
-  :hover {
-    color: #663399 !important;
-  }
-  min-width: 150px;
-`
 
 const DropdownMenu = props => {
 
   const {list, title, listOpen, toggleList} = props
 
   return (
-    <Wrapper>
+    <div id="wrapper">
       <div className="navbar-item has-dropdown" onClick={toggleList}>
-        <HeaderTitle className="navbar-link">{title}</HeaderTitle>
+        <div role="menuitem" aria-label="dropdown menu header" className="navbar-link" id="header-title">{title}</div>
       </div>
       {listOpen && 
-        <List className="dropdown-menu">
+        <div id="dropdown-list" className="dropdown-menu">
             {list.map(item => (
-              <Item className="navbar-item" key={item.id} to={`/${item.title.toLowerCase()}/`} onClick={toggleList}>
+              <Link className="navbar-item dropdown-list-item" key={item.id} to={`/${item.title.toLowerCase()}/`} onClick={toggleList}>
                 {item.title}
-              </Item>
+              </Link>
             ))}
-        </List>
+        </div>
       }
-    </Wrapper>
+    </div>
   )
 
 }

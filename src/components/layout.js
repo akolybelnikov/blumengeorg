@@ -48,12 +48,13 @@ export default class Layout extends React.Component {
           style={{
           margin: '0 auto',
           maxWidth: 1200,
-          padding: '3.0875rem 1.45rem',
-          minHeight: '85vh'
+          padding: '3.0875rem 1rem',
+          minHeight: '85vh',
+          width: '100%'
         }}>
           {this.props.children}
         </div>
-        < Footer/>
+        <Footer/>
       </React.Fragment>
     )
   }

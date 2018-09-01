@@ -1,0 +1,25 @@
+#wrapper {
+  cursor: pointer;
+  min-width: 150px;
+}
+
+#header-title {
+  color: white !important;
+  &:hover {
+    color: #663399 !important;
+  }
+  min-width: 150px;
+}
+
+#dropdown-list {
+  position: absolute;
+}
+
+.dropdown-list-item {
+  color: white !important;
+  background: rgba(101, 55, 148, 0.7);
+  :hover {
+    color: #663399 !important;
+  }
+  min-width: 150px;
+}

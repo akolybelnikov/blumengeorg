@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import Carousel from '../components/Carousel/Carousel'
 import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p className="has-text-centered">Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link className="button" to="/page-2/">Go to page 2</Link>
+    <Link className="button is-primary" to="/page-2/">Go to page 2</Link>
+    <Carousel />
   </Layout>
 )
 
 export default IndexPage
+

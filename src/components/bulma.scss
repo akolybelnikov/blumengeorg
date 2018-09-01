@@ -13,12 +13,17 @@ $background: $main-background;
 $body-color: $main-text;
 $link: $secondary-purple;
 $panel-item-border: none;
+$dropdown-item-active-background-color: $main-purple;
 
 @import "~bulma/sass/utilities/_all";
 @import "~bulma/sass/base/_all";
 @import "~bulma/sass/components/navbar";
 @import "~bulma/sass/layout/footer";
+@import "~bulma/sass/layout/section";
 @import "~bulma/sass/components/level";
 @import "~bulma/sass/components/menu";
 @import "~bulma/sass/components/panel";
 @import "~bulma/sass/elements/button";
+@import "~bulma/sass/elements/box";
+@import "~bulma/sass/elements/container";
+@import "~bulma/sass/grid/columns";

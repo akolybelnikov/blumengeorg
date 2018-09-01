@@ -1,27 +1,7 @@
 import React, { PureComponent, Fragment } from 'react'
-import styled from 'styled-components'
 import Link from 'gatsby-link'
-import './menu.css'
+import './menu.scss'
 import NAVITEMS from '../navitems'
-
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 4fr 1fr;
-`
-const MenuItem = styled.a`
-  margin-bottom: 10px;
-  background: ${props =>
-    props.active ? 'rgba(133, 112, 153, 0.9)' : 'rgba(102,51,153,.8)'};
-  color: ${props => (props.active ? 'white' : 'whitesmoke')};
-  z-index: 1200;
-` 
-const SubMenu = styled.div`
-  padding: 0 10px;
-  z-index: 1200;  
-`
-const SubmenuItem = styled(Link)`
-  margin-bottom: 5px;
-`
 
 const items = [
   { title: 'blume', key: 'flower' },
@@ -63,37 +43,36 @@ export default class NestedMenu extends PureComponent {
     const { openKey } = this.state
 
     return (
-      <Container>
+      <div id="nested-menu-container">
         {!visible ? null : (
           <Fragment>                 
             <div>
               {items.map((item, i) => (
-                <MenuItem className="button is-primary is-fullwidth" 
+                <button className="button is-primary is-fullwidth nested-menu-item" 
                   onClick={this.onOpenChange}
                   key={item.key}
-                  active={openKey === item.key}
                 >               
                   {item.title}              
-                </MenuItem>
+                </button>
               ))} 
             </div>           
             {openKey !== undefined ? (
-              <SubMenu className="panel slideInLeft">                  
+              <div id="nested-menu-submenu" className="panel">                  
                 {navitems[openKey].map(submenuitem => (
-                  <SubmenuItem
-                    className="panel-block button is-link"
+                  <Link
+                    className="panel-block button is-link nested-submenu-item"
                     onClick={this.onNavigation}
                     key={submenuitem.id}
                     to={`/${submenuitem.title.toLowerCase()}/`}
                   >
                     {submenuitem.title}
-                  </SubmenuItem>
+                  </Link>
                 ))}                        
-              </SubMenu>
+              </div>
             ) : null}        
           </Fragment>
         )}
-      </Container>
+      </div>
     )
   }
 }
