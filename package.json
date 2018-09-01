@@ -5,9 +5,7 @@
   "author": "Andrey Kolybelnikov <a.kolybelnikov@gmail.com>",
   "dependencies": {
     "@babel/runtime": "7.0.0-rc.3",
-    "babel-plugin-styled-components": "^0.0.3-0",
     "bulma": "^0.7.1",
-    "bulma-carousel": "^3.0.0",
     "delay": "^3.1.0",
     "gatsby": "^2.0.0-rc.0",
     "gatsby-image": "^2.0.0-rc.1",
@@ -16,7 +14,6 @@
     "gatsby-plugin-react-helmet": "^3.0.0-rc.0",
     "gatsby-plugin-sass": "^2.0.0-rc.0",
     "gatsby-plugin-sharp": "^2.0.0-rc.3",
-    "gatsby-plugin-styled-components": "^3.0.0-rc.0",
     "gatsby-source-contentful": "^2.0.1-rc.0",
     "gatsby-source-filesystem": "^2.0.1-rc.0",
     "gatsby-transformer-sharp": "^2.1.1-rc.2",
@@ -28,8 +25,7 @@
     "react-lazy-load": "^3.0.13",
     "react-loading-screen": "^0.0.17",
     "react-responsive": "^5.0.0",
-    "react-spring": "5.6.11",
-    "styled-components": "^3.4.5"
+    "react-spring": "5.6.11"
   },
   "keywords": [
     "gatsby",

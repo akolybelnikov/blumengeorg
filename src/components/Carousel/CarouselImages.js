@@ -6,7 +6,7 @@ import Slide from './Slide'
 const defaultStyles = {
   width: '90%',
   position: 'absolute',
-  marginLeft: '5%'
+  marginLeft: '1%'
 }
 
 export default class CarouselImages extends PureComponent {
@@ -31,7 +31,7 @@ export default class CarouselImages extends PureComponent {
       this.setState(state => ({
         index: state.index === 3 ? 0 : state.index + 1,
       }))
-    }, 7000)
+    }, 10000)
   }
 
   componentWillUnmount() {

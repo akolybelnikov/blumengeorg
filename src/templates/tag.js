@@ -34,15 +34,9 @@ export const query = graphql `
               img {
                   id
                   title
-                  sizes(maxWidth: 900) {
-                      src
-                      base64
-                      aspectRatio
-                      srcSet
-                      srcWebp
-                      srcSetWebp
-                      sizes
-                  }
+                  fluid(maxWidth: 700) {
+                    ...GatsbyContentfulFluid_withWebp
+                }
               }
           }
       }
