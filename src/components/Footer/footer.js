@@ -8,8 +8,8 @@ const Footer = () => (
   <footer id="main-footer" className="footer">
     <div className="level">
       <div className="level-left">
-        <div className="level-item is-pulled-left"><Address/></div>
-        <div className="level-item is-pulled-left"><Telephone/></div>
+        <div className="level-item"><Address/></div>
+        <div className="level-item"><Telephone/></div>
       </div>
       <div className="level-right">
         <div className="level-item"><IconBouquetcat height="100"/></div>

@@ -1,9 +1,18 @@
+.carousel-outer-container {
+  overflow: hidden;
+  position: relative;
+  height: 130vh;
+}
+
 #carousel-section {
   -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   background-image: url('../images/arch.png');
   background-repeat: round;
   background-size: contain;
-  background-position: -30px 20px;
+  background-position: 0px 20px;
   @media only screen and (max-width: 823px) {
     background-image: url('../images/arch.png');
     background-repeat: round;

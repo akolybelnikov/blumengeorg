@@ -41,17 +41,19 @@ export default class CarouselImages extends PureComponent {
   render() {
     const {pages, index } = this.state
     return (
-      <section id="carousel-section" className="section">          
-        <Transition
-          native
-          config={config.slow}
-          from={{ opacity: 0, transform: 'translate3d(100%,0,0)' }}
-          enter={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
-          leave={{ opacity: 0, transform: 'translate3d(-30%,0,0)' }}
-        >
-          {pages[index]}
-        </Transition>         
-      </section>
+      <div className="carousel-outer-container">
+        <section id="carousel-section" className="section">          
+          <Transition
+            native
+            config={config.slow}
+            from={{ opacity: 0, transform: 'translate3d(100%,0,0)' }}
+            enter={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
+            leave={{ opacity: 0, transform: 'translate3d(-30%,0,0)' }}
+          >
+            {pages[index]}
+          </Transition>         
+        </section>
+      </div>
     )
   }
 }

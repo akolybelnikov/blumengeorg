@@ -54,7 +54,9 @@ export default class Layout extends React.Component {
           width: '100%',
           display: 'flex',
           justifyContent: 'center',
-          flexDirection: 'column'
+          flexDirection: 'column',
+          position: 'relative',
+          overflow: 'hidden'
         }}>
           {this.props.children}
         </div>

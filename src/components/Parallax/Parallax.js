@@ -14,14 +14,14 @@ class ParallaxPage extends React.PureComponent {
     render() {
         return (
             <Parallax
+                className="main-parallax"
                 style={{
-                left: 0,
-                scrollBehavior: 'smooth',
-                msOverflowStyle: 'none'
-            }}
+                    left: 0,
+                    scrollBehavior: 'smooth',                  
+                }}
                 ref={ref => {
-                this.parallax = ref
-            }}
+                    this.parallax = ref
+                }}
                 pages={3}>
 
                 <Parallax.Layer

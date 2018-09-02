@@ -1,0 +1,12 @@
+.main-parallax {
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@-moz-document url-prefix() {
+    .main-parallax {
+        overflow: hidden !important;
+    }
+}
