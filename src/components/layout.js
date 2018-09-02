@@ -1,8 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
-import Header from './header'
-import Footer from './footer'
+import Header from './Header/header'
+import Footer from './Footer/footer'
 import SlideMenu from './sidemenu/SlideMenu'
 import './layout.css'
 import './bulma.scss'
@@ -18,7 +17,9 @@ export default class Layout extends React.Component {
   }
 
   toggleSideMenu = () => {
-    this.setState(prevstate => ({ sideMenuOpen: !prevstate.sideMenuOpen }))
+    this.setState(prevstate => ({
+      sideMenuOpen: !prevstate.sideMenuOpen
+    }))
   }
 
   render() {
@@ -42,15 +43,18 @@ export default class Layout extends React.Component {
           <meta property="og:type" content="website"/>
           <meta property="og:site_name" content={config.siteTitle}/>
         </Helmet>
-        <Header open={this.state.sideMenuOpen} toggle={this.toggleSideMenu} />
-        <SlideMenu open={this.state.sideMenuOpen} toggle={this.toggleSideMenu} />
+        <Header open={this.state.sideMenuOpen} toggle={this.toggleSideMenu}/>
+        <SlideMenu open={this.state.sideMenuOpen} toggle={this.toggleSideMenu}/>
         <div
           style={{
           margin: '0 auto',
           maxWidth: 1600,
           padding: '3.0875rem 1rem',
           minHeight: '85vh',
-          width: '100%'
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          flexDirection: 'column'
         }}>
           {this.props.children}
         </div>

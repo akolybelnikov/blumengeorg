@@ -2,6 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    @media screen and (max-width: 414px) {
+        padding: 0 1.5rem;
+    }
 }
 
 .product-section-item {

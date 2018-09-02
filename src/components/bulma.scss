@@ -1,7 +1,7 @@
 @import "~bulma/sass/utilities/initial-variables";
 
 $main-purple: rgba(101,55,148,1);
-$main-purple-light: rgba(101,55,148,.5);
+$main-purple-light: rgba(101,55,148,.7);
 $main-background: #000;
 $main-text: #fff;
 $secondary-purple: #776587;
@@ -19,7 +19,7 @@ $box-background-color: $main-purple-light;
 $box-padding: .8rem;
 $card-color: $main-text;
 $card-background-color: transparent;
-$card-content-background-color: $main-purple-light;
+$card-content-background-color: transparent;
 $card-footer-border-top: none;
 
 @import "~bulma/sass/utilities/_all";
@@ -35,5 +35,6 @@ $card-footer-border-top: none;
 @import "~bulma/sass/elements/box";
 @import "~bulma/sass/elements/image";
 @import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/icon";
 @import "~bulma/sass/grid/columns";
 @import "~bulma/sass/grid/tiles";

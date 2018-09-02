@@ -1,11 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
-import {graphql} from "gatsby"
+import { graphql } from "gatsby"
 import ProductCard from '../components/Product/ProductCard'
 import './tag.scss'
 
-export default({data}) => {
-    console.log(data)
+export default({ data }) => {
     return (
         <Layout>
             <section id="products-section" className="section">
@@ -13,15 +12,13 @@ export default({data}) => {
                     .allContentfulProduct
                     .edges
                     .map(edge => (
-                        <div 
-                          key={edge.node.id}
-                          className="product-section-item">
-                          <ProductCard
-                            priceS={edge.node.priceS}
-                            priceM={edge.node.priceM}
-                            priceL={edge.node.priceL}
-                            title={edge.node.name}
-                            fluid={edge.node.img.fluid} />
+                        <div key={edge.node.id} className="product-section-item">
+                            <ProductCard
+                                priceS={edge.node.priceS}
+                                priceM={edge.node.priceM}
+                                priceL={edge.node.priceL}
+                                title={edge.node.name}
+                                fluid={edge.node.img.fluid}/>
                         </div>
                     ))}
             </section>

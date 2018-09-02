@@ -1,10 +1,10 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import Logo from './svg/Logo'
-import Letters from './Letters'
-import IconBurgerMenu from './icons/IconBurgerMenu'
+import Logo from '../svg/Logo'
+import Letters from '../Letters'
+import IconBurgerMenu from '../icons/IconBurgerMenu'
 import './header.scss'
-import MenuBar from './Menu'
+import MenuBar from '../Menu'
 
 const Header = props => {
   const {toggle, open} = props
