@@ -7,7 +7,7 @@ const CategoryWidgets = ({widgets}) => {
     return (
         <React.Fragment>
             {widgets && widgets.map(widget => 
-                <div key={widget.node.id} className="column">
+                <div key={widget.node.id} className="categories-widget">
                     <Widget title={widget.node.description} image={widget.node.fluid}/>
                 </div>
             )

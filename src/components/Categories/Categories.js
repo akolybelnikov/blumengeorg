@@ -23,7 +23,7 @@ const Categories = () => {
                 }
             `}  
             render = {data => (
-                <section className="section columns"><CategoryWidgets widgets={data.allContentfulAsset.edges} /></section>
+                <section id="categories-section" className="section"><CategoryWidgets widgets={data.allContentfulAsset.edges} /></section>
             )}
         />  
     )

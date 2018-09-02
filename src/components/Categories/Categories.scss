@@ -1,6 +1,23 @@
+#categories-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .widget-card {
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: scale(1.02);
+  }
+}
+
+.categories-widget {
+  width: 22%;
+  margin: 10px;
+  @media screen and (min-width: 461px) and (max-width: 830px) {
+    width: 45%;
+  }
+  @media screen and (max-width: 460px) {
+    width: 100%;
   }
 }

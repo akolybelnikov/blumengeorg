@@ -22,7 +22,7 @@ const Widget = ({title, image}) => {
                             </div>
                             <div className="card-footer">
                                 <div className="card-footer-item">
-                                    <button className="button is-primary is-medium"><ArrowCircleRight color={'rgba(255,255,255,.5)'}/></button>
+                                    <ArrowCircleRight color={'rgba(255,255,255,.5)'}/>
                                 </div>
                             </div>
                         </div>

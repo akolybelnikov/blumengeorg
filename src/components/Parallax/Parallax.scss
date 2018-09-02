@@ -2,4 +2,8 @@
     @media screen and (max-width: 768px) {
         padding-bottom: 300px;
     }
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
