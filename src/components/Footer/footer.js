@@ -2,16 +2,17 @@ import React from 'react'
 import Address from '../Address/Address'
 import Telephone from '../Address/Telephone'
 import IconBouquetcat from '../icons/IconBouquetCat'
+import './footer.scss'
 
 const Footer = () => (
-  <footer style={{padding: '1.5rem'}} className="footer">
-    <div className="level is-mobile">
+  <footer id="main-footer" className="footer">
+    <div className="level">
       <div className="level-left">
-      <Address />
-      <Telephone />
+        <div className="level-item is-pulled-left"><Address/></div>
+        <div className="level-item is-pulled-left"><Telephone/></div>
       </div>
       <div className="level-right">
-        <IconBouquetcat height="150" />
+        <div className="level-item"><IconBouquetcat height="100"/></div>
       </div>
     </div>
   </footer>

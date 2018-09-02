@@ -16,9 +16,9 @@ const ProductCard = (props) => {
                 {title}
                 </div>
                 <div className="card-footer">
-                <p className="card-footer-item">{priceS}</p>
-                <p className="card-footer-item">{priceM}</p>
-                <p className="card-footer-item">{priceL}</p>
+                <p className="card-footer-item">EUR {priceS}</p>
+                <p className="card-footer-item">EUR {priceM}</p>
+                <p className="card-footer-item">EUR {priceL}</p>
                 </div>
             </div>
         </div>

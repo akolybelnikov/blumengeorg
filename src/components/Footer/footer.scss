@@ -1,0 +1,6 @@
+#main-footer {
+  padding: 1.5rem;
+  @media screen and (max-width: 414px) {
+      padding: 1rem 1.5rem 6rem;
+  }
+}

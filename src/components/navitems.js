@@ -102,6 +102,11 @@ const NAVITEMS = {
       id: 6,
       title: 'rosa',
       key: 'color'
+    },
+    {
+      id: 7,
+      title: 'blau',
+      key: 'color'
     }
   ]
 }

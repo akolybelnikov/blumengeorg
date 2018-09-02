@@ -1,12 +1,11 @@
 import React from 'react'
-import Carousel from '../components/Carousel/Carousel'
 import Layout from '../components/layout'
+import ParallaxPage from '../components/Parallax/Parallax'
 
 const IndexPage = (props) => {
-  console.log(props)
   return (
     <Layout>
-      <Carousel/>
+      <ParallaxPage/>
     </Layout>
   )
 }
