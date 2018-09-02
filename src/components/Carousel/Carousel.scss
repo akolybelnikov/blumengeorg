@@ -1,4 +1,5 @@
 #carousel-section {
+  -ms-overflow-style: none;
   background-image: url('../images/arch.png');
   background-repeat: round;
   background-size: contain;
@@ -9,25 +10,31 @@
     background-size: contain;
     background-position: -15px -30px;
     width: 95%;
-    top: 150px;
+    top: 80px;
   }
   height: 100%;
   width: 100%;
   position: absolute;
   overflow-x: hidden;
   @media all and (min-width: 1025px) and (orientation: landscape) {
-    width: 90%;
-    height: 120%;
+    width: 100%;
+    height: 100%;
   }
 }
 .carousel-right-image {
   -ms-transform: rotate(5deg); /* IE 9 */
   -webkit-transform: rotate(5deg); /* Safari */
-  transform: rotate(5deg); /* Standard syntax */
+  transform: rotate(3deg); /* Standard syntax */
   background-color: rgba(101, 55, 148, 0.8);
   border: 5px solid rgba(101, 55, 148, 0.8);
   border-radius: 10px;
-  top: 100px;
+  top: 150px;
+  width: 70%;
+  margin: 0 auto;
+  @media only screen and (max-width: 823px) {
+    width: 100%;
+    top: 50px;
+  }
 }
 
 .carousel-left-image {
@@ -37,4 +44,11 @@
   background-color: rgba(101, 55, 148, 0.8);
   border: 5px solid rgba(101, 55, 148, 0.8);
   border-radius: 10px;
+  top: 100px;
+  width: 90%;
+  margin: 0 auto;
+  @media only screen and (max-width: 823px) {
+    width: 100%;
+    top: 30px;
+  }
 }
