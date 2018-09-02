@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import CarouselImages from './CarouselImages'
+import CarouselSlider from './CarouselSlider'
 
 const Carousel = () => (
     <StaticQuery
@@ -20,7 +20,7 @@ const Carousel = () => (
         }
       `}  
       render = {data => (
-          <CarouselImages images={data.allContentfulAsset.edges} />
+          <CarouselSlider images={data.allContentfulAsset.edges} />
       )}
     />  
 )

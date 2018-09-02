@@ -18,6 +18,9 @@ const Header = props => {
             fill="rgba(255,255,255,.7)"
             alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
         </Link>
+        <div className="navbar-item is-hidden-tablet">
+          <Letters width="8%" fill="white" maxWidth="120px" />
+        </div>
         <div
           id="burger-container"
           onClick={toggle}
@@ -36,7 +39,7 @@ const Header = props => {
         </div>
         <div className="navbar-end">
           <div className="navbar-item">
-            <MenuBar />            
+            <MenuBar/>
           </div>
         </div>
       </div>

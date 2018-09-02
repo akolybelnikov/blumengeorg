@@ -25,7 +25,9 @@
     "react-lazy-load": "^3.0.13",
     "react-loading-screen": "^0.0.17",
     "react-responsive": "^5.0.0",
-    "react-spring": "5.6.11"
+    "react-slick": "^0.23.1",
+    "react-spring": "5.6.11",
+    "slick-carousel": "^1.8.1"
   },
   "keywords": [
     "gatsby",

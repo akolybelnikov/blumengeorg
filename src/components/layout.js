@@ -50,7 +50,7 @@ export default class Layout extends React.Component {
           margin: '0 auto',
           maxWidth: 1600,
           padding: '3.0875rem 1rem',
-          minHeight: '85vh',
+          minHeight: '100vh',
           width: '100%',
           display: 'flex',
           justifyContent: 'center',

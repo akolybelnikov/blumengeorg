@@ -8,7 +8,7 @@ const ProductCard = (props) => {
         <div className="box product-box">
             <div className="card">
                 <div class="card-image">
-                    <figure class="image">
+                    <figure className="image">
                         <Img fluid={fluid}/>
                     </figure>
                 </div>
