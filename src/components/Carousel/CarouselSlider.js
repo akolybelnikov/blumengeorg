@@ -9,22 +9,15 @@ export default class CarouselSlider extends React.Component {
         var settings = {
             className: `outer-slider`,
             infinite: true,
-            speed: 500,
+            speed: 1000,
             autoplay: true,
-            centerMode: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 10000,
             lazyLoad: `progressive`,
             slidesToShow: 2,
             slidesToScroll: 1,
+            centerMode: true,
             responsive: [
                 {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        dots: true
-                    }
-                }, {
                     breakpoint: 800,
                     settings: {
                         slidesToShow: 1,
@@ -34,9 +27,9 @@ export default class CarouselSlider extends React.Component {
                 }, {
                     breakpoint: 480,
                     settings: {
-                        fade: true,
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        centerPadding: `15px`
                     }
                 }
             ]

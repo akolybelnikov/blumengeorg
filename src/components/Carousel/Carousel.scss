@@ -6,6 +6,8 @@
   width: 60%;
   @media screen and (max-width: 480px) {
     width: 100%;
+    padding: 10px 15px;
+    margin: 0;
   }
 }
 
@@ -18,5 +20,24 @@
   }
   @media screen and (max-width: 767px) {
     background: black;
+  }
+}
+
+.outer-slider {
+  @media screen and (max-width: 480px) {
+    height: 80vh;
+    .slick-prev {
+      left: -10px;
+    }
+    .slick-next {
+      right: -10px;
+    }
+    .slick-list,
+    .slick-track {
+      height: 90vh;
+    }
+    .slick-slide {
+     
+    }
   }
 }

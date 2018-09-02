@@ -10,7 +10,7 @@ import './Categories.scss'
 const Widget = ({title, image}) => {
     return (
         <ErrorBoundary>
-            <LazyLoad offsetBottom={100}>
+            <LazyLoad offsetBottom={200}>
                 <Link to={`${title}`}>
                     <div className="box widget-card">
                         <div className="card">
