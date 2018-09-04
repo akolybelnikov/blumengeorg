@@ -12,7 +12,7 @@ import R from './svg/R'
 
 const Letters = props => {
   return (
-    <div style={{maxWidth: props.maxWidth, display: 'flex', maxHeight: '3.25rem'}}>
+    <div style={{maxWidth: props.maxWidth, display: 'flex', justifyContent: 'center'}}>
       <B width={props.width} fill={props.fill} />
       <L width={props.width} fill={props.fill} />
       <U width={props.width} fill={props.fill} />

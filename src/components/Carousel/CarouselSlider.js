@@ -21,7 +21,7 @@ export default class CarouselSlider extends React.Component {
                     breakpoint: 1600,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 1
+                        slidesToScroll: 2
                     }
                 },
                 {

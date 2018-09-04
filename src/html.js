@@ -7,16 +7,6 @@ export default class HTML extends React.Component {
       <html {...this.props.htmlAttributes}>
         <head>
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125181627-1"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments)
-            }
-            gtag('js', new Date());
-
-            gtag('config', 'UA-125181627-1');
-          </script>
-
           <meta charSet="utf-8"/>
           <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
           <meta

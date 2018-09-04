@@ -1,20 +1,29 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 
+.slick-list {
+  @media screen and (min-width: 1024px) {
+    margin-top: 100px;
+  }
+}
+
 .slider-item {
-  margin: 10px auto;
+  margin: 0px auto;
   width: 60%;
   @media screen and (max-width: 480px) {
     width: 100%;
     padding: 10px 15px;
     margin: 0;
   }
+  @media screen and (min-width: 1024px) {
+    margin: 30px auto;
+  }
 }
 
 .slick-slide.slick-active {
   background-image: url('../images/arch.png');
   background-size: cover;
-  background-position: top -100px left 0;
+  background-position: top -75px left 0;
   @media screen and (max-width: 1024px) {
     background-position: top -80px left 0;
   }
@@ -34,7 +43,7 @@
     }
     .slick-list,
     .slick-track {
-      height: 90vh;
+      height: 80vh;
     }
     .slick-slide {
      

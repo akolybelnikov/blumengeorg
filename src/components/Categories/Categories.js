@@ -9,7 +9,11 @@ const Categories = () => {
         <StaticQuery
             query = {graphql`
                 query categoriesWidgetsQuery {
-                allContentfulAsset(limit: 4 filter: { title: {eq: "widget" } }) {
+                allContentfulAsset(
+                    limit: 4,
+                    filter: { title: {eq: "widget" } },
+                    sort: {fields: [description], order: DESC} 
+                ) {
                     edges {
                     node {
                         id

@@ -3,6 +3,7 @@ import {Link} from 'gatsby'
 import Logo from '../svg/Logo'
 import Letters from '../Letters'
 import IconBurgerMenu from '../icons/IconBurgerMenu'
+import IconXmasCat from '../icons/IconXmasCat'
 import './header.scss'
 import MenuBar from '../Menu'
 
@@ -18,9 +19,8 @@ const Header = props => {
             fill="rgba(255,255,255,.7)"
             alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
         </Link>
-        <div className="navbar-item is-hidden-tablet">
-          <Letters width="8%" fill="white" maxWidth="120px" />
-        </div>
+        <div style={{width: '15%'}} className="navbar-item is-hidden-tablet"></div>
+        <div className="navbar-item is-hidden-tablet"><IconXmasCat  width="75" /></div>
         <div
           id="burger-container"
           onClick={toggle}
