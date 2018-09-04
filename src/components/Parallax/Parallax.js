@@ -30,7 +30,7 @@ class ParallaxPage extends React.PureComponent {
                     style={{
                     scrollBehavior: 'smooth'
                 }}
-                    offset={0.15}
+                    offset={0.2}
                     speed={0.3}>
                     <Carousel/>
                 </Parallax.Layer>
@@ -55,14 +55,12 @@ class ParallaxPage extends React.PureComponent {
 
                 <Parallax.Layer
                     style={{
-                    scrollBehavior: 'smooth'
+                    scrollBehavior: 'smooth',
+                    opacity: 0.5
                 }}
                     offset={1.8}
                     speed={0.6}
-                    onClick={() => this.parallax.scrollTo(2)}
-                    style={{
-                    opacity: 0.4
-                }}>
+                    onClick={() => this.parallax.scrollTo(2)}>
                     <LazyLoad>
                         <img
                             alt=""
