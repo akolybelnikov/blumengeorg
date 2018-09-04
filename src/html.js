@@ -6,11 +6,25 @@ export default class HTML extends React.Component {
     return (
       <html {...this.props.htmlAttributes}>
         <head>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125181627-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments)
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-125181627-1');
+          </script>
+
           <meta charSet="utf-8"/>
           <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"/> {this.props.headComponents}
+          <meta
+            name="google-site-verification"
+            content="bGDpkZUqpbVGBLN1SPNqlckUII03Cv-wiF-eukGFGsY"/>
         </head>
         <body className="has-navbar-fixed-top" {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
@@ -22,15 +36,10 @@ export default class HTML extends React.Component {
           }}/> {this.props.postBodyComponents}
         </body>
       </html>
-    )
-  }
-}
-
-HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array
+      ) } } HTML.propTypes = {htmlAttributes : PropTypes.object,
+      headComponents : PropTypes.array,
+      bodyAttributes : PropTypes.object,
+      preBodyComponents : PropTypes.array,
+      body : PropTypes.string,
+      postBodyComponents : PropTypes.array
 }

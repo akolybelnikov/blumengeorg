@@ -42,6 +42,7 @@ export default class Layout extends React.Component {
           <meta property="og:locale" content="en_US"/>
           <meta property="og:type" content="website"/>
           <meta property="og:site_name" content={config.siteTitle}/>
+          <meta property="og:google-site-verification" content="bGDpkZUqpbVGBLN1SPNqlckUII03Cv-wiF-eukGFGsY" />
         </Helmet>
         <Header open={this.state.sideMenuOpen} toggle={this.toggleSideMenu}/>
         <SlideMenu open={this.state.sideMenuOpen} toggle={this.toggleSideMenu}/>

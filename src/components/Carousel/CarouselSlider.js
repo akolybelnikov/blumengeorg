@@ -11,12 +11,19 @@ export default class CarouselSlider extends React.Component {
             infinite: true,
             speed: 1000,
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 7000,
             lazyLoad: `progressive`,
             slidesToShow: 2,
             slidesToScroll: 1,
             centerMode: true,
             responsive: [
+                {
+                    breakpoint: 1600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
                 {
                     breakpoint: 800,
                     settings: {
