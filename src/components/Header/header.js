@@ -19,8 +19,8 @@ const Header = props => {
             fill="rgba(255,255,255,.7)"
             alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
         </Link>
-        <div style={{width: '15%'}} className="navbar-item is-hidden-tablet"></div>
-        <div className="navbar-item is-hidden-tablet"><IconXmasCat  width="75" /></div>
+        <div style={{width: '10%'}} className="navbar-item is-hidden-tablet"></div>
+        <div className="navbar-item is-hidden-tablet"><IconXmasCat width="75" /></div>
         <div
           id="burger-container"
           onClick={toggle}

@@ -20,7 +20,7 @@ const IndexPage = (props) => {
       <Mobile>
         <div
           style={{
-          margin: '5% 0',
+          margin: '10px 0',
           display: 'flex',
           justifyContent: 'center',
           width: '100%'

@@ -1,7 +1,7 @@
 import React from 'react'
 import Address from '../Address/Address'
 import Telephone from '../Address/Telephone'
-import IconHotlineCat from '../icons/IconBouquetCat'
+import IconHotlineCat from '../icons/IconHotlineCat'
 import './footer.scss'
 
 const Footer = () => (
