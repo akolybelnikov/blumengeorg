@@ -27,14 +27,19 @@ class ParallaxPage extends React.PureComponent {
                 pages={3}>
 
                 <Parallax.Layer
-                    offset={0}
-                    speed={0.3}
-                    onClick={() => this.parallax.scrollTo(1)}>
+                    style={{
+                    scrollBehavior: 'smooth'
+                }}
+                    offset={0.15}
+                    speed={0.3}>
                     <Carousel/>
                 </Parallax.Layer>
 
                 <Parallax.Layer
-                    offset={0.8}
+                    style={{
+                    scrollBehavior: 'smooth'
+                }}
+                    offset={0.9}
                     speed={-0.1}
                     onClick={() => this.parallax.scrollTo(1)}>
                     <div
@@ -49,6 +54,9 @@ class ParallaxPage extends React.PureComponent {
                 </Parallax.Layer>
 
                 <Parallax.Layer
+                    style={{
+                    scrollBehavior: 'smooth'
+                }}
                     offset={1.8}
                     speed={0.6}
                     onClick={() => this.parallax.scrollTo(2)}
@@ -87,7 +95,12 @@ class ParallaxPage extends React.PureComponent {
                     </LazyLoad>
                 </Parallax.Layer>
 
-                <Parallax.Layer offset={1} speed={1}>
+                <Parallax.Layer
+                    offset={1}
+                    speed={1}
+                    style={{
+                    scrollBehavior: 'smooth'
+                }}>
                     <div style={{
                         marginTop: '10%'
                     }}><Categories/></div>
@@ -96,6 +109,9 @@ class ParallaxPage extends React.PureComponent {
                 <Parallax.Layer
                     offset={2}
                     speed={1}
+                    style={{
+                    scrollBehavior: 'smooth'
+                }}
                     onClick={() => this.parallax.scrollTo(0)}>
                     <div style={{
                         height: 200
