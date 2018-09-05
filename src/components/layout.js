@@ -57,7 +57,8 @@ export default class Layout extends React.Component {
           justifyContent: 'center',
           flexDirection: 'column',
           position: 'relative',
-          overflow: 'hidden'
+          overflow: 'hidden',
+          scrollBehavior: 'smooth'
         }}>
           {this.props.children}
         </div>

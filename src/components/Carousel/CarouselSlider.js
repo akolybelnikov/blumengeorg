@@ -18,16 +18,16 @@ export default class CarouselSlider extends React.Component {
             centerMode: true,
             responsive: [
                 {
-                    breakpoint: 1600,
+                    breakpoint: 1800,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 2
                     }
                 },
                 {
-                    breakpoint: 800,
+                    breakpoint: 960,
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 2,
                         slidesToScroll: 1,
                         initialSlide: 2
                     }

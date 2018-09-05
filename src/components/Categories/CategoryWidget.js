@@ -8,8 +8,8 @@ import Responsive from 'react-responsive'
 import ArrowCircleRight from '../icons/ArrowCircleRight'
 import './Categories.scss'
 
-const Mobile = props => <Responsive {...props} maxWidth={767}/>;
-const Default = props => <Responsive {...props} minWidth={768}/>;
+const Mobile = props => <Responsive {...props} maxWidth={768}/>;
+const Default = props => <Responsive {...props} minWidth={769}/>;
 
 const Widget = ({title, image}) => {
     return (
