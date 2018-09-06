@@ -39,7 +39,7 @@ class ParallaxPage extends React.PureComponent {
                     style={{
                     scrollBehavior: 'smooth'
                 }}
-                    offset={0.9}
+                    offset={0.95}
                     speed={-0.1}
                     onClick={() => this.parallax.scrollTo(1)}>
                     <div

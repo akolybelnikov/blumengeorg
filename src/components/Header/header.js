@@ -12,16 +12,16 @@ const Header = props => {
 
   return (
     <nav className="navbar is-fixed-top" aria-label="main navigation">
-      <div className="navbar-brand">
+      <div style={{justifyContent: 'space-between'}} className="navbar-brand">
         <Link className="navbar-item" to="/">
           <Logo
             height="80"
             fill="rgba(255,255,255,.7)"
             alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
         </Link>
-        <div style={{width: '10%'}} className="navbar-item is-hidden-tablet"></div>
-        <div className="navbar-item is-hidden-tablet"><IconXmasCat width="75" /></div>
+        <div className="navbar-item is-hidden-desktop"><IconXmasCat width="75" /></div>
         <div
+          style={{marginLeft: 0}}
           id="burger-container"
           onClick={toggle}
           role="button"

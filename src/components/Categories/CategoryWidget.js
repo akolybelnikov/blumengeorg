@@ -15,7 +15,7 @@ const Widget = ({title, image}) => {
     return (
         <ErrorBoundary>
             <Mobile>
-                <LazyLoad offsetVertical={200}>
+                <LazyLoad offsetVertical={300}>
                     <Link to={`${title}`}>
                         <div className="box widget-card">
                             <div className="card">
