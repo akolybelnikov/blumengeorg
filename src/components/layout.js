@@ -52,7 +52,7 @@ export default class Layout extends React.Component {
           style={{
           margin: '0 auto',
           maxWidth: 1600,
-          padding: '5.0875rem 1rem',
+          padding: '4.0875rem 1rem',
           minHeight: '100vh',
           width: '100%',
           display: 'flex',

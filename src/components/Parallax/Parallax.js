@@ -9,6 +9,7 @@ import IconXmasCat from '../icons/IconXmasCat'
 import roses from '../images/roses.svg'
 import hibiscus from '../images/hibiscus.png'
 import dahlia from '../images/dahlia.png'
+import ParallaxLayer from '../ParallaxLayer'
 
 import './Parallax.scss'
 
@@ -26,11 +27,19 @@ class ParallaxPage extends React.PureComponent {
             }}
                 pages={3}>
 
+                <ParallaxLayer
+                    offset={0.15}
+                    speed={-1}
+                    backgroundposition={'top 75% left 0'}
+                    backgroundsize={'50%'}
+                    backgroundrepeat={'repeat-x'}
+                    height={'75vh'}/>
+
                 <Parallax.Layer
                     style={{
                     scrollBehavior: 'smooth'
                 }}
-                    offset={0.2}
+                    offset={0.18}
                     speed={0.3}>
                     <Carousel/>
                 </Parallax.Layer>
@@ -49,7 +58,7 @@ class ParallaxPage extends React.PureComponent {
                         alignItems: 'center'
                     }}>
                         <IconXmasCat width="100"/>
-                        <Letters maxWidth="85%" width="7%" fill="whitesmoke"/>
+                        <Letters maxWidth="85%" width="7%" fill="rgba(101,55,148,1)"/>
                     </div>
                 </Parallax.Layer>
 

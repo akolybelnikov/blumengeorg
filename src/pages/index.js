@@ -7,6 +7,7 @@ import Responsive from 'react-responsive'
 import IconXmasCat from '../components/icons/IconXmasCat'
 import IconBouquetCat from '../components/icons/IconBouquetCat'
 import IconBirthdayCat from '../components/icons/IconBirthdayCat'
+import Arch from '../components/Arch'
 
 const Mobile = props => <Responsive {...props} maxWidth={823}/>
 const Default = props => <Responsive {...props} minWidth={824}/>
@@ -20,11 +21,21 @@ const IndexPage = (props) => {
       <Mobile>
         <div
           style={{
+            position: 'absolute',
+            left: '-7vw',
+            top: '-10vh'
+          }}
+        >
+          <Arch width={'110vw'} height={'110vh'} />
+        </div>
+        <div
+          style={{
           marginTop: 0,
           display: 'flex',
           justifyContent: 'center',
-          width: '100%'
-        }}><IconXmasCat height="100"/></div>
+          width: '100%',
+          height: '5vh'
+        }}></div>
         <Carousel/>
         <div
           style={{

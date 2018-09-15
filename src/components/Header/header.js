@@ -14,16 +14,10 @@ const Header = props => {
   return (
     <nav className="navbar is-fixed-top" aria-label="main navigation">
       <div style={{justifyContent: 'space-between'}} className="navbar-brand">
-        <Link className="navbar-item is-hidden-touch" to="/">
-          <Logo
-            height="80"
-            fill="rgba(255,255,255,.7)"
-            alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
-        </Link>
-        <Link className="navbar-item is-hidden-desktop" to="/">
+        <Link className="navbar-item" to="/">
           <LogoLetters
             height="80"
-            fill="rgba(255,255,255,.7)"
+            fill="rgba(255,255,255,.85)"
             alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
         </Link>
         <div
@@ -38,11 +32,6 @@ const Header = props => {
         </div>
       </div>
       <div className="navbar-menu">
-        <div className="navbar-start">
-          <div className="navbar-item">
-            <Letters width="8%" fill="white" maxWidth="500px"/>
-          </div>
-        </div>
         <div className="navbar-end">
           <div className="navbar-item">
             <MenuBar/>

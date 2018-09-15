@@ -25,15 +25,14 @@ export default class CarouselSlider extends React.Component {
                     }
                 },
                 {
-                    breakpoint: 960,
+                    breakpoint: 1200,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
-                        initialSlide: 2,
                         centerPadding: `15px`
                     }
                 }, {
-                    breakpoint: 480,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
