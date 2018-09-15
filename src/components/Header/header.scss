@@ -6,3 +6,34 @@
     margin-top: 5px;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .navbar-menu {
+    flex-grow: 0 !important;
+  }
+  
+  .navbar-brand {
+    flex-grow: 1;
+    padding-right: 2rem;
+  }
+}
+
+.button {
+    &:hover {
+      span {
+        color: rgba(101,55,148,.7) !important;
+      }
+    }
+    &:active {
+      background-color: rgba(101,55,148,.7) !important;
+      span {
+        color: rgba(255,255,255,.85) !important;
+      }
+    }
+    &:focus {
+      background-color: rgba(101,55,148,.7) !important;
+      span {
+        color: rgba(255,255,255,.85) !important;
+      }
+    }
+}

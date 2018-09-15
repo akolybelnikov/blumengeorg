@@ -8,13 +8,14 @@ import OpenTimes from '../components/OpenTimes/OpenTimes'
 import IconBouquetCat from '../components/icons/IconBouquetCat'
 import IconBirthdayCat from '../components/icons/IconBirthdayCat'
 import Arch from '../components/Arch'
+import IconDeliveryCat from '../components/icons/IconDeliveryCat'
 
 const Mobile = props => <Responsive {...props} maxWidth={823}/>
 const Default = props => <Responsive {...props} minWidth={824}/>
 
 const IndexPage = (props) => {
   return (
-    <Layout>
+    <Layout location={props.location}>
       <Default>
         <Parallax/>
       </Default>
@@ -57,6 +58,16 @@ const IndexPage = (props) => {
           <IconBirthdayCat height="120"/>
         </div>
         <OpenTimes />
+        <div
+          style={{
+          marginTop: '10px',
+          marginBottom: '-50px',
+          display: 'flex',
+          justifyContent: 'center',
+          width: '100%'
+        }}>
+          <IconDeliveryCat width="100" height="100"/>
+        </div>
       </Mobile>
     </Layout>
   )

@@ -17,6 +17,7 @@
     "gatsby-source-contentful": "^2.0.1-rc.0",
     "gatsby-source-filesystem": "^2.0.1-rc.0",
     "gatsby-transformer-sharp": "^2.1.1-rc.2",
+    "google-maps-react": "^2.0.2",
     "node-sass": "^4.9.3",
     "path": "^0.12.7",
     "react": "^16.4.2",

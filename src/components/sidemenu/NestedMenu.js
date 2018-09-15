@@ -48,7 +48,7 @@ export default class NestedMenu extends PureComponent {
           <Fragment>                 
             <div>
               {items.map((item, i) => (
-                <button className="button is-primary is-fullwidth nested-menu-item" 
+                <button className="button is-primary is-medium is-fullwidth nested-menu-item" 
                   onClick={this.onOpenChange}
                   key={item.key}
                 >               
@@ -60,7 +60,7 @@ export default class NestedMenu extends PureComponent {
               <div id="nested-menu-submenu" className="panel">                  
                 {navitems[openKey].map(submenuitem => (
                   <Link
-                    className="panel-block button is-link nested-submenu-item"
+                    className="panel-block button is-link is-medium nested-submenu-item"
                     onClick={this.onNavigation}
                     key={submenuitem.id}
                     to={`/${submenuitem.title.toLowerCase()}/`}

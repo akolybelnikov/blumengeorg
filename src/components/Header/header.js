@@ -4,6 +4,7 @@ import LogoLetters from '../svg/LogoLetters'
 import IconBurgerMenu from '../icons/IconBurgerMenu'
 import './header.scss'
 import MenuBar from '../Menu'
+import MapMarker from '../icons/MapMarker'
 
 const Header = props => {
   const {toggle, open} = props
@@ -13,9 +14,16 @@ const Header = props => {
       <div style={{justifyContent: 'space-between'}} className="navbar-brand">
         <Link className="navbar-item" to="/">
           <LogoLetters
-            height="80"
+            height="100"
             fill="rgba(255,255,255,.85)"
             alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
+        </Link>
+        <Link style={{alignSelf: 'center'}} className="navbar-item is-hidden-mobile button is-primary is-outlined is-inverted is-medium" to="contact">
+          <span className="icon"><MapMarker
+          height="50"
+          fill="rgba(255,255,255,.85)"
+          alt="Blumenhaus Georg: Lage in Koeln"/></span>
+          <span className="has-text-grey-lighter">Finde uns</span>
         </Link>
         <div
           style={{marginLeft: 0}}

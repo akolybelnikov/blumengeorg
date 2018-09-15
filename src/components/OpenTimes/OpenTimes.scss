@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+    margin-top: -10%;
+  }
 }
 
 .ui-card {
@@ -20,11 +23,15 @@
     height: 60vh;
   }
   @media screen and (max-width: 768px) and (orientation: portrait) {
-    height: 35vh;
+    height: 25vh;
     width: 40vw;
     flex: 0 0 40vw;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1024px) and (orientation: portrait) {
+    height: 25vh;
+    flex: 0 0 40vw;
+  }
+  @media screen and (min-width: 1025px) {
     grid-template: 1fr 2fr / auto auto;
     margin-bottom: 0;
   }
