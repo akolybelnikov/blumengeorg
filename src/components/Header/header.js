@@ -1,10 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import Logo from '../svg/Logo'
 import LogoLetters from '../svg/LogoLetters'
-import Letters from '../Letters'
 import IconBurgerMenu from '../icons/IconBurgerMenu'
-import IconXmasCat from '../icons/IconXmasCat'
 import './header.scss'
 import MenuBar from '../Menu'
 

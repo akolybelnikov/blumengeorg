@@ -10,6 +10,7 @@ import roses from '../images/roses.svg'
 import hibiscus from '../images/hibiscus.png'
 import dahlia from '../images/dahlia.png'
 import ParallaxLayer from '../ParallaxLayer'
+import OpenTimes from '../OpenTimes/OpenTimes'
 
 import './Parallax.scss'
 
@@ -28,12 +29,12 @@ class ParallaxPage extends React.PureComponent {
                 pages={3}>
 
                 <ParallaxLayer
-                    offset={0.15}
-                    speed={-1}
-                    backgroundposition={'top 75% left 0'}
+                    offset={0.05}
+                    speed={-.6}
+                    backgroundposition={'top 0 left 0'}
                     backgroundsize={'50%'}
                     backgroundrepeat={'repeat-x'}
-                    height={'75vh'}/>
+                    height={'100vh'}/>
 
                 <Parallax.Layer
                     style={{
@@ -120,9 +121,7 @@ class ParallaxPage extends React.PureComponent {
                     scrollBehavior: 'smooth'
                 }}
                     onClick={() => this.parallax.scrollTo(0)}>
-                    <div style={{
-                        height: 200
-                    }}></div>
+                    <OpenTimes />
                 </Parallax.Layer>
 
             </Parallax>
