@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables";
+@import "fonts.scss";
 
 $main-purple: rgba(101,55,148,1);
 $main-purple-light: rgba(101,55,148,.7);
@@ -22,6 +23,7 @@ $card-background-color: transparent;
 $card-content-background-color: transparent;
 $card-footer-border-top: none;
 $card-header-color: $main-text;
+$family-sans-serif: 'montserratregular', sans-serif;
 
 @import "~bulma/sass/utilities/_all";
 @import "~bulma/sass/base/_all";
