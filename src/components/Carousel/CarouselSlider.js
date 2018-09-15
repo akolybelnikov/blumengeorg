@@ -1,6 +1,54 @@
 import React from "react"
 import Slider from "react-slick"
 import Slide from './Slide'
+import ChevronLeft from '../icons/ChevronLeft'
+import ChevronRight from '../icons/ChevronRight'
+import Responsive from 'react-responsive'
+
+const Mobile = props => <Responsive {...props} maxWidth={823}/>
+const Default = props => <Responsive {...props} minWidth={824}/>
+
+function NextArrow(props) {
+    const {style, onClick} = props;
+    return (
+        <div
+            className="slick-arrow-right"
+            style={{
+            ...style,
+            right: '20px',
+            zIndex: 100,
+            position: 'absolute',
+            top: '50%',
+            lineHeight: 0,
+            cursor: 'pointer'
+        }}
+            onClick={onClick}>
+            <Mobile><ChevronRight width="30px" height="30px" color="lightgrey"/></Mobile>
+            <Default><ChevronRight width="50px" height="50px" color="lightgrey"/></Default>
+        </div>
+    );
+}
+
+function PrevArrow(props) {
+    const {style, onClick} = props;
+    return (
+        <div
+            className="slick-arrow-left"
+            style={{
+            ...style,
+            left: '20px',
+            zIndex: 100,
+            position: 'absolute',
+            top: '50%',
+            lineHeight: 0,
+            cursor: 'pointer'
+        }}
+            onClick={onClick}>
+            <Mobile><ChevronLeft width="30px" height="30px" color="lightgrey"/></Mobile>
+            <Default><ChevronLeft width="50px" height="50px" color="lightgrey"/></Default>
+        </div>
+    );
+}
 
 export default class CarouselSlider extends React.Component {
 
@@ -8,6 +56,7 @@ export default class CarouselSlider extends React.Component {
         const {images} = this.props
         var settings = {
             className: `outer-slider`,
+            dots: true,
             infinite: true,
             speed: 1000,
             autoplay: true,
@@ -16,6 +65,8 @@ export default class CarouselSlider extends React.Component {
             slidesToShow: 2,
             slidesToScroll: 1,
             centerMode: true,
+            nextArrow: <NextArrow/>,
+            prevArrow: <PrevArrow/>,
             responsive: [
                 {
                     breakpoint: 1800,
@@ -23,8 +74,7 @@ export default class CarouselSlider extends React.Component {
                         slidesToShow: 3,
                         slidesToScroll: 2
                     }
-                },
-                {
+                }, {
                     breakpoint: 1200,
                     settings: {
                         slidesToShow: 2,

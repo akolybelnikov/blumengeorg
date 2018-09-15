@@ -20,22 +20,19 @@
   }
   @media screen and (min-width: 1024px) {
     margin: 30px auto;
+    width: 75%;
   }
 }
 
-// .slick-slide.slick-active {
-//   @media screen and (max-width: 767px) {
-//     background: black;
-//   }
-// }
-
 .outer-slider {
   @media screen and (max-width: 860px) {
-    .slick-prev {
-      left: -10px;
+    .slick-arrow-left {
+      left: -10px !important;
+      top: 40% !important;
     }
-    .slick-next {
-      right: -10px;
+    .slick-arrow-right {
+      right: -10px !important;
+      top: 40% !important;
     }
   }
 }

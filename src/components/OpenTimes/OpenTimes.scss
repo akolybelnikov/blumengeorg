@@ -14,7 +14,7 @@
   display: grid;
   grid-template-rows: 1fr 2fr;
   margin-bottom: 1.5rem;
-  height: 20vh;
+  height: 35vh;
   flex: 0 0 20%;
   @media screen and (max-width: 823px) and (orientation: landscape) {
     height: 60vh;
@@ -27,6 +27,10 @@
   @media screen and (min-width: 1024px) {
     grid-template: 1fr 2fr / auto auto;
     margin-bottom: 0;
+  }
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.02);
   }
 }
 

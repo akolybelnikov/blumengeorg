@@ -49,9 +49,8 @@ class ParallaxPage extends React.PureComponent {
                     style={{
                     scrollBehavior: 'smooth'
                 }}
-                    offset={0.96}
-                    speed={-0.1}
-                    onClick={() => this.parallax.scrollTo(1)}>
+                    offset={1.75}
+                    speed={-0.1}>
                     <div
                         style={{
                         display: 'flex',
@@ -68,9 +67,8 @@ class ParallaxPage extends React.PureComponent {
                     scrollBehavior: 'smooth',
                     opacity: 0.5
                 }}
-                    offset={1.8}
-                    speed={0.6}
-                    onClick={() => this.parallax.scrollTo(2)}>
+                    offset={2}
+                    speed={.5}>
                     <LazyLoad>
                         <img
                             alt=""
@@ -105,7 +103,7 @@ class ParallaxPage extends React.PureComponent {
 
                 <Parallax.Layer
                     offset={1}
-                    speed={1}
+                    speed={.4}
                     style={{
                     scrollBehavior: 'smooth'
                 }}>
@@ -115,13 +113,12 @@ class ParallaxPage extends React.PureComponent {
                 </Parallax.Layer>
 
                 <Parallax.Layer
-                    offset={2}
-                    speed={1}
+                    offset={2.4}
+                    speed={-0}
                     style={{
                     scrollBehavior: 'smooth'
-                }}
-                    onClick={() => this.parallax.scrollTo(0)}>
-                    <OpenTimes />
+                }}>
+                    <OpenTimes/>
                 </Parallax.Layer>
 
             </Parallax>
