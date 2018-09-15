@@ -1,17 +1,40 @@
-#address-container, #telephone-container {
+#address-container,
+#telephone-container,
+#email-container {
   display: grid;
   grid-template: auto / 1fr 3fr;
-}
-
-#street-address, #telephone-number {
-  grid-column: 2;
-  align-self: center;
-  p {
-    margin: 2px;
+  a {
+    color: whitesmoke;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+      color: lightgrey;
+    }
   }
 }
 
-#icon-marker, #icon-phone {
+#street-address,
+#telephone-number,
+#email-address {
+  grid-column: 2;
+  align-self: center;
+  p,
+  a {
+    margin: 2px;
+  }
+  a {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+      color: lightgrey;
+    }
+  }
+}
+
+#icon-marker,
+#icon-phone,
+#icon-envelope {
   grid-column: 1;
   align-self: center;
   justify-self: center;

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Parallax} from 'react-spring'
 import LazyLoad from 'react-lazy-load'
-
+import IconDeliveryCat from '../icons/IconDeliveryCat'
 import Carousel from '../Carousel/Carousel'
 import Categories from '../Categories/Categories'
 import Letters from '../Letters'
@@ -119,6 +119,15 @@ class ParallaxPage extends React.PureComponent {
                     scrollBehavior: 'smooth'
                 }}>
                     <OpenTimes/>
+                    <div
+                        style={{
+                        marginTop: '25px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        width: '100%'
+                    }}>
+                        <IconDeliveryCat width="120"/>
+                    </div>
                 </Parallax.Layer>
 
             </Parallax>
