@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import Logo from '../svg/Logo'
+import LogoLetters from '../svg/LogoLetters'
 import Letters from '../Letters'
 import IconBurgerMenu from '../icons/IconBurgerMenu'
 import IconXmasCat from '../icons/IconXmasCat'
@@ -13,13 +14,18 @@ const Header = props => {
   return (
     <nav className="navbar is-fixed-top" aria-label="main navigation">
       <div style={{justifyContent: 'space-between'}} className="navbar-brand">
-        <Link className="navbar-item" to="/">
+        <Link className="navbar-item is-hidden-touch" to="/">
           <Logo
             height="80"
             fill="rgba(255,255,255,.7)"
             alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
         </Link>
-        <div className="navbar-item is-hidden-desktop"><IconXmasCat width="75" /></div>
+        <Link className="navbar-item is-hidden-desktop" to="/">
+          <LogoLetters
+            height="80"
+            fill="rgba(255,255,255,.7)"
+            alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
+        </Link>
         <div
           style={{marginLeft: 0}}
           id="burger-container"

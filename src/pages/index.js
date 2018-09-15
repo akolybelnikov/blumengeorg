@@ -4,7 +4,7 @@ import Parallax from '../components/Parallax/Parallax'
 import Carousel from '../components/Carousel/Carousel'
 import Categories from '../components/Categories/Categories'
 import Responsive from 'react-responsive'
-import Letters from '../components/Letters'
+import IconXmasCat from '../components/icons/IconXmasCat'
 import IconBouquetCat from '../components/icons/IconBouquetCat'
 import IconBirthdayCat from '../components/icons/IconBirthdayCat'
 
@@ -20,12 +20,11 @@ const IndexPage = (props) => {
       <Mobile>
         <div
           style={{
+          marginTop: 0,
           display: 'flex',
           justifyContent: 'center',
           width: '100%'
-        }}>
-          <Letters maxWidth={'90%'} width={'8%'} fill={'whitesmoke'}/>
-        </div>
+        }}><IconXmasCat height="100"/></div>
         <Carousel/>
         <div
           style={{
