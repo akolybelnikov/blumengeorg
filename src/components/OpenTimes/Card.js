@@ -4,7 +4,7 @@ import './OpenTimes.scss'
 const Card = props => {
   return (
     <div className="ui-card">
-      <h2 className="days">{props.days}</h2>
+      <p className="days">{props.days}</p>
       <div className="hours">
         <p>
           <span className="has-text-grey-light">haben wir</span> von {props.open} Uhr bis {props.closed} Uhr{' '}
