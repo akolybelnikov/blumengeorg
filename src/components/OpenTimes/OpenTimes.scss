@@ -23,11 +23,11 @@
     height: 60vh;
   }
   @media screen and (max-width: 768px) and (orientation: portrait) {
-    height: 25vh;
+    height: 30vh;
     width: 40vw;
     flex: 0 0 40vw;
   }
-  @media screen and (max-width: 1024px) and (orientation: portrait) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
     height: 25vh;
     flex: 0 0 40vw;
   }
