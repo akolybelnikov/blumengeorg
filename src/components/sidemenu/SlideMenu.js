@@ -4,7 +4,6 @@ import delay from 'delay'
 import NestedMenu from './NestedMenu'
 import LogoLetters from '../svg/LogoLetters'
 import IconBurgerMenu from '../icons/IconBurgerMenu'
-import Letters from '../Letters'
 
 const Sidebar = Keyframes.Spring({
   open: async call => {

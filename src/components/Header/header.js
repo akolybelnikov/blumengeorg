@@ -37,7 +37,7 @@ const Header = props => {
       </div>
       <div className="navbar-menu">
         <div className="navbar-end">
-          {props.location.pathname !== '/contact' && <Link
+          {(props.location && props.location.pathname !== '/contact') && <Link
             style={{
             alignSelf: 'center',
             marginRight: '2rem'
