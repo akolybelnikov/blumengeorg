@@ -46,7 +46,7 @@ export default class Layout extends Component {
             property="og:google-site-verification"
             content="bGDpkZUqpbVGBLN1SPNqlckUII03Cv-wiF-eukGFGsY"/>
         </Helmet>
-        <Header open={this.state.sideMenuOpen} toggle={this.toggleSideMenu}/>
+        <Header location={this.props.location} open={this.state.sideMenuOpen} toggle={this.toggleSideMenu}/>
         <SlideMenu open={this.state.sideMenuOpen} toggle={this.toggleSideMenu}/>
         <div
           style={{

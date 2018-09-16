@@ -37,7 +37,7 @@ const Header = props => {
       </div>
       <div className="navbar-menu">
         <div className="navbar-end">
-          <Link
+          {props.location.pathname !== '/contact' && <Link
             style={{
             alignSelf: 'center',
             marginRight: '2rem'
@@ -49,7 +49,7 @@ const Header = props => {
               fill="rgba(255,255,255,.85)"
               alt="Blumenhaus Georg: Lage in Koeln"/></span>
             <span className="has-text-grey-lighter">Finde uns</span>
-          </Link>
+          </Link>}
           <div className="navbar-item">
             <MenuBar/>
           </div>

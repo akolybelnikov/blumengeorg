@@ -2,7 +2,7 @@ import React from 'react'
 import {Keyframes, animated, config} from 'react-spring'
 import delay from 'delay'
 import NestedMenu from './NestedMenu'
-import Logo from '../svg/Logo'
+import LogoLetters from '../svg/LogoLetters'
 import IconBurgerMenu from '../icons/IconBurgerMenu'
 import Letters from '../Letters'
 
@@ -45,8 +45,7 @@ const SlideMenu = props => {
           width: '100%',
           background: 'rgba(0,0,0,1)',
           zIndex: 1000,
-          transform: x.interpolate(x => `translate3d(${x}%,0,0)`),
-          // overflowY: 'scroll'
+          transform: x.interpolate(x => `translate3d(${x}%,0,0)`)
         }}>
           <NestedMenu visible={true} toggle={toggle}/>
           <div
@@ -59,14 +58,16 @@ const SlideMenu = props => {
           }}>
             <IconBurgerMenu open={state}/>
           </div>
-          <nav className="level is-mobile navbar is-black is-fixed-bottom">
-            <div className="level-item">
-              <Logo width="100" fill="rebeccapurple"/>
+          <nav className="navbar is-fixed-bottom">
+            <div className="level is-mobile">
+            <div className="level-item" style={{margin: '10px 0', flexGrow: 0}}>
+              <LogoLetters height="80" fill="whitesmoke"/>
             </div>
             <div className="lavel-item">
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
-                <Letters width="5%" fill="white"/>
-              </div>
+              {/** <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+                        <Letters width="5%" fill="white"/>
+                    </div> **/}
+            </div>
             </div>
           </nav>
         </animated.div>
