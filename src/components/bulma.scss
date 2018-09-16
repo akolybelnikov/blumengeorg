@@ -4,16 +4,17 @@
 $main-purple: rgba(101,55,148,1);
 $main-purple-light: rgba(101,55,148,.7);
 $main-background: #000;
-$main-text: #fff;
+$main-text: whitesmoke;
 $secondary-purple: #776587;
 
 $primary: $main-purple;
+$info: $secondary-purple;
 $navbar-background-color: $main-purple;
 $footer-background-color: $main-purple;
 $navbar-tab-hover-border-bottom-color: $main-purple;
 $background: $main-background;
 $body-color: $main-text;
-$link: $secondary-purple;
+$link: $main-text;
 $panel-item-border: none;
 $dropdown-item-active-background-color: $main-purple;
 $box-background-color: $main-purple-light;
@@ -25,6 +26,7 @@ $card-footer-border-top: none;
 $card-header-color: $main-text;
 $family-sans-serif: 'montserratregular', sans-serif;
 $navbar-dropdown-arrow: $main-text;
+$breadcrumb-item-active-color: $main-purple;
 
 @import "~bulma/sass/utilities/_all";
 @import "~bulma/sass/base/_all";
@@ -35,6 +37,7 @@ $navbar-dropdown-arrow: $main-text;
 @import "~bulma/sass/components/level";
 @import "~bulma/sass/components/menu";
 @import "~bulma/sass/components/panel";
+@import "~bulma/sass/components/breadcrumb";
 @import "~bulma/sass/elements/button";
 @import "~bulma/sass/elements/box";
 @import "~bulma/sass/elements/image";

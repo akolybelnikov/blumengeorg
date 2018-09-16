@@ -56,7 +56,7 @@ export default class Layout extends Component {
           minHeight: '100vh',
           width: '100%',
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: this.props.justifyContent,
           flexDirection: 'column',
           position: 'relative',
           overflow: 'hidden',

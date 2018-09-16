@@ -21,11 +21,12 @@
       height: 75% !important;
       width: 95% !important;
       left: 2.5%;
-      top: 15%;
+      top: 20%;
     }
     @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
-      width: 95% !important;
-      left: 2.5%;
-      top: 15%;
+      width: 90% !important;
+      left: 5%;
+      top: 20%;
+      height: 70% !important;
     }
 }

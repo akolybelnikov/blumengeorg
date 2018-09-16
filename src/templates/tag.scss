@@ -1,10 +1,15 @@
 #products-section {
     max-width: 100%;
+    min-height: 70vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    @media screen and (max-width: 414px) {
-        padding: 0 1.5rem;
+    align-items: center;
+    @media screen and (max-width: 480px) {
+        padding: 0;
+    }
+    @media screen and (min-width: 1025px) {
+        padding: 1rem;
     }
 }
 
@@ -16,6 +21,9 @@
         min-width: 100%;
     }
     @media all and (max-width: 824px) and (orientation: landscape) {
-        max-width: 45%;
+        max-width: 48%;
+    }
+    @media all and (min-width: 1024px) {
+        max-width: 30%;
     }
 }

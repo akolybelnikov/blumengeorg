@@ -4,14 +4,19 @@ import {graphql} from "gatsby"
 import ProductCard from '../components/Product/ProductCard'
 import './tag.scss'
 import EmptyPage from '../components/EmptyPage/EmptyPage'
+import Phone from '../components/icons/Phone'
+import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 
 export default class ProductPage extends Component {
     render() {
         return (
-            <Layout location={this.props.location}>
+            <Layout location={this.props.location} justifyContent={'center'} >
+                <Breadcrumb pathname={this.props.location.pathname}/>
                 <section id="products-section" className="section">
                     {this.props.data.allContentfulProduct
-                        ? this.props.data
+                        ? this
+                            .props
+                            .data
                             .allContentfulProduct
                             .edges
                             .map(edge => (
@@ -25,8 +30,20 @@ export default class ProductPage extends Component {
                                 </div>
                             ))
                         : <EmptyPage/>
-                    }
+}
                 </section>
+                <a
+                    href="tel:00491797319455"
+                    className="button is-primary is-outlined is-inverted level-item is-fullwidth is-hidden-tablet"
+                    style={{
+                    margin: '2rem 0 -1.5rem 0'
+                }}
+                    aria-label="telephone number of Blumen Georg">
+                    <span className="icon">
+                        <Phone width="24" height="24" fill="whitesmoke"/>
+                    </span>
+                    <span>Eine Bestellung besprechen</span>
+                </a>
             </Layout>
         )
     }

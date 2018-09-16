@@ -59,7 +59,7 @@ export default class NestedMenu extends PureComponent {
               <div id="nested-menu-submenu" className="panel">                  
                 {navitems[openKey].map(submenuitem => (
                   <Link
-                    className="panel-block button is-link nested-submenu-item"
+                    className="panel-block button is-link is-info nested-submenu-item"
                     onClick={this.onNavigation}
                     key={submenuitem.id}
                     to={`/${submenuitem.title.toLowerCase()}/`}

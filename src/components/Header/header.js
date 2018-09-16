@@ -13,7 +13,8 @@ const Header = props => {
     <nav className="navbar is-fixed-top" aria-label="main navigation">
       <div
         style={{
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        with: '100%'
       }}
         className="navbar-brand">
         <Link className="navbar-item" to="/">

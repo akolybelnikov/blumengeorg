@@ -16,7 +16,7 @@ const Default = props => <Responsive {...props} minWidth={824}/>
 
 const IndexPage = (props) => {
   return (
-    <Layout location={props.location}>
+    <Layout location={props.location} justifyContent={'center'} >
       <Default>
         <Parallax/>
       </Default>

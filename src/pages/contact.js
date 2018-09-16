@@ -1,10 +1,12 @@
 import React from 'react'
 import Layout from '../components/layout'
 import GoogleMap from '../components/ContactDetails/GoogleMap'
+import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 
 const ContactPage = (props) => {
     return (
-        <Layout location={props.location}>
+        <Layout justifyContent={'flex-start'} location={props.location}>
+            <Breadcrumb pathname={props.location.pathname} />
             <GoogleMap />
         </Layout>
     )

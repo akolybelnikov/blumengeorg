@@ -5,10 +5,15 @@ import Envelope from '../icons/Envelope'
 const Email = props => {
     return (
         <div id="email-container">
-            <div id="icon-envelope">
-                <Envelope width="24" height="24" fill="whitesmoke"/>
-            </div>
-            <a id="email-address" href="mailto:blumengeorg@gmail.com">blumengeorg@gmail.com</a>
+            <a
+                id="email-address"
+                className="button is-primary is-inverted is-outlined"
+                href="mailto:blumengeorg@gmail.com">
+                <span style={{marginRight: '10px'}} className="icon">
+                    <Envelope width="24" height="24" fill="whitesmoke"/>
+                </span>
+                <span>blumengeorg@gmail.com</span>
+            </a>
         </div>
     )
 }

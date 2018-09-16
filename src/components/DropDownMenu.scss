@@ -17,8 +17,8 @@
 
 .dropdown-list-item {
   color: white !important;
-  background: rgba(101, 55, 148, 0.7);
-  :hover {
+  background: rgba(101, 55, 148, .9);
+  &:hover {
     color: #663399 !important;
   }
   min-width: 150px;

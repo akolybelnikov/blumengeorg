@@ -8,8 +8,8 @@ const MobileLandscape = props => (<Responsive {...props} maxWidth={823} orientat
 const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={1023}/>
 const Default = props => (<Responsive {...props} minWidth={1024}/>)
 
-const NotFoundPage = () => (
-  <Layout>
+const NotFoundPage = props => (
+  <Layout location={props.location} justifyContent={'center'} >
     <div style={{
       display: 'flex',
       justifyContent: 'center',

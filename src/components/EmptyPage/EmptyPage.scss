@@ -1,5 +1,6 @@
 .empty-page-container {
   width: 70%;
+  height: 100%;
   @media screen and (max-width: 414px) and (orientation: portrait) {
     width: 100%;
   }
@@ -8,7 +9,7 @@
 .icon-holder {
   margin: 0 auto;
   @media screen and (max-width: 414px) and (orientation: portrait) {
-    width: 90%;
+    width: 50%;
   }
   @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     width: 70%;
