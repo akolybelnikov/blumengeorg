@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react'
 import './Details.scss'
 
-class GoogleMap extends React.Component {
+class GoogleMap extends Component {
   render() {
     return (
       <Map

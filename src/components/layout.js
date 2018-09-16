@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment, Component} from 'react'
 import Helmet from 'react-helmet'
 import Header from './Header/header'
 import Footer from './Footer/footer'
@@ -8,7 +8,7 @@ import './bulma.scss'
 import config from '../../siteConfig'
 import favicon from '../images/favicon.ico'
 
-export default class Layout extends React.Component {
+export default class Layout extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,7 +24,7 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <Helmet
           meta={[
           {
@@ -51,7 +51,7 @@ export default class Layout extends React.Component {
         <div
           style={{
           margin: '0 auto',
-          maxWidth: 1600,
+          maxWidth: 1800,
           padding: '4.0875rem 1rem',
           minHeight: '100vh',
           width: '100%',
@@ -64,8 +64,8 @@ export default class Layout extends React.Component {
         }}>
           {this.props.children}
         </div>
-        <Footer/>
-      </React.Fragment>
+        <Footer location={this.props.location}/>
+      </Fragment>
     )
   }
 }

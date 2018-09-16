@@ -10,6 +10,7 @@ import IconBirthdayCat from '../components/icons/IconBirthdayCat'
 import Arch from '../components/Arch'
 import IconDeliveryCat from '../components/icons/IconDeliveryCat'
 
+
 const Mobile = props => <Responsive {...props} maxWidth={823}/>
 const Default = props => <Responsive {...props} minWidth={824}/>
 
@@ -22,12 +23,11 @@ const IndexPage = (props) => {
       <Mobile>
         <div
           style={{
-            position: 'absolute',
-            left: '-7vw',
-            top: '-10vh'
-          }}
-        >
-          <Arch width={'110vw'} height={'110vh'} />
+          position: 'absolute',
+          left: '-7vw',
+          top: '-5vh'
+        }}>
+          <Arch width={'110vw'} height={'110vh'}/>
         </div>
         <div
           style={{
@@ -57,7 +57,7 @@ const IndexPage = (props) => {
         }}>
           <IconBirthdayCat height="120"/>
         </div>
-        <OpenTimes />
+        <OpenTimes/>
         <div
           style={{
           marginTop: '10px',

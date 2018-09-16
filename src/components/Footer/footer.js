@@ -4,11 +4,18 @@ import Telephone from '../Address/Telephone'
 import Email from '../Address/Email'
 import IconHotlineCat from '../icons/IconHotlineCat'
 import './footer.scss'
+import {Link} from 'gatsby'
 
-const Footer = () => (
-  <footer id="main-footer" className="footer">
+const Footer = props => {
+  return (
+    <footer id="main-footer" className="footer">
     <div className="level">
       <div className="level-left">
+        <div className="level-item is-hidden-tablet">
+          <Link className="is-hidden-tablet button is-primary is-outlined is-inverted" to="contact">
+            <span className="has-text-grey-lighter">Finde uns auf der Map</span>
+          </Link>
+        </div>
         <div className="level-item"><Address/></div>
         <div className="level-item"><Telephone/></div>
         <div className="level-item"><Email/></div>
@@ -18,6 +25,7 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-)
+  )
+}
 
 export default Footer

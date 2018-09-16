@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 import Slider from "react-slick"
 import Slide from './Slide'
 import ChevronLeft from '../icons/ChevronLeft'
@@ -50,7 +50,7 @@ function PrevArrow(props) {
     );
 }
 
-export default class CarouselSlider extends React.Component {
+export default class CarouselSlider extends Component {
 
     render() {
         const {images} = this.props

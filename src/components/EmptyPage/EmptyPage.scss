@@ -1,0 +1,23 @@
+.empty-page-container {
+  width: 70%;
+  @media screen and (max-width: 414px) and (orientation: portrait) {
+    width: 100%;
+  }
+}
+
+.icon-holder {
+  margin: 0 auto;
+  @media screen and (max-width: 414px) and (orientation: portrait) {
+    width: 90%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    width: 70%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 823px) and (orientation: landscape) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 50%;
+  }
+}

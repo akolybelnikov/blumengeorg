@@ -34,7 +34,6 @@ export default class NestedMenu extends PureComponent {
   }
 
   onNavigation = () => {
-    this.setState({ openKey: undefined })
     this.props.toggle()
   }
 
