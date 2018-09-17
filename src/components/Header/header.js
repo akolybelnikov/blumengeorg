@@ -17,9 +17,15 @@ const Header = props => {
         with: '100%'
       }}
         className="navbar-brand">
-        <Link className="navbar-item" to="/">
+        <Link className="navbar-item is-hidden-mobile" to="/">
           <LogoLetters
             height="100"
+            fill="rgba(255,255,255,.85)"
+            alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
+        </Link>
+        <Link className="navbar-item is-hidden-tablet" to="/">
+          <LogoLetters
+            height="70"
             fill="rgba(255,255,255,.85)"
             alt="Blumenhaus Georg: Der Blumenladen Ihrer Wahl in Koeln"/>
         </Link>

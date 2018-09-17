@@ -1,3 +1,40 @@
 #main-footer {
   padding: 1.5rem;
 }
+
+.address-item {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 320px) {
+  .level-item {
+    width: 270px;
+    a, div {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 414px) {
+  .level-item {
+    width: 310px;
+    a, div {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .level-item > div, a {
+    width: 380px;
+    a {
+      width: 100%;
+    }
+    #email-container {
+      width: 100%;
+      a {
+        width: 100%;
+      }
+    }
+  }
+}

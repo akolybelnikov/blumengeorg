@@ -28,6 +28,6 @@ class GoogleMap extends Component {
   }
 }
 
-export default GoogleApiWrapper((props) => ({
-  apiKey: "AIzaSyAZsuj5iITal3Ilou_krh70Jg53il2sudY"
+export default GoogleApiWrapper(() => ({
+  apiKey: process.env.GOOGLE_API_KEY
 }))(GoogleMap)

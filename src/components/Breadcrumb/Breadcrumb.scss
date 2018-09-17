@@ -15,6 +15,9 @@
   @media screen and (max-width: 580px) {
     display: none !important;
   }
+  &:hover {
+    background-color: rgba(101,55,148,1) !important;
+  }
 }
 
 .level-icon {

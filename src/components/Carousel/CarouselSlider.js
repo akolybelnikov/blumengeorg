@@ -72,7 +72,7 @@ export default class CarouselSlider extends Component {
                     breakpoint: 1800,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 2
+                        slidesToScroll: 1
                     }
                 }, {
                     breakpoint: 1200,

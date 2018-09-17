@@ -17,7 +17,7 @@ const Widget = ({title, image}) => {
             <Mobile>
                 <LazyLoad offsetVertical={300}>
                     <Link to={`${title}`}>
-                        <div className="box widget-card">
+                        <div className="widget-card">
                             <div className="card">
                                 <div className="card-header">
                                     <p className="is-capitalized card-header-title">{title}</p>

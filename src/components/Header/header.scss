@@ -9,20 +9,21 @@
 
 .button {
     &:hover {
+      background-color: black !important;
       span {
-        color: rgba(101,55,148,.7) !important;
+        color: whitesmoke !important;
       }
     }
     &:active {
-      background-color: rgba(101,55,148,.7) !important;
+      background-color: black !important;
       span {
-        color: rgba(255,255,255,.85) !important;
+        color: whitesmoke !important;
       }
     }
     &:focus {
-      background-color: rgba(101,55,148,.7) !important;
+      background-color: black !important;
       span {
-        color: rgba(255,255,255,.85) !important;
+        color: whitesmoke !important;
       }
     }
 }

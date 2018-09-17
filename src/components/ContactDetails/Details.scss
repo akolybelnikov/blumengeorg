@@ -3,13 +3,14 @@
     height: 65% !important;
     left: 17.5%;
     top: 20.5%;
-    border: 15px solid rgba(101,55,148,1);
-    border-radius: 10px;
-    @media screen and (max-width: 479px) {
+    border: 5px solid rgba(101,55,148,1);
+    border-radius: 5px;
+
+    @media screen and (max-width: 580px) {
       width: 90% !important;
-      height: 65% !important;
+      height: 65vh !important;
       left: 5%;
-      top: 20%;
+      top: 160px;
     }
     @media screen and (max-width: 823px) and (orientation: landscape) {
       height: 60% !important;
