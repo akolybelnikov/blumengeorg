@@ -49,6 +49,7 @@ export default class Layout extends Component {
         <Header location={this.props.location} open={this.state.sideMenuOpen} toggle={this.toggleSideMenu}/>
         <SlideMenu open={this.state.sideMenuOpen} toggle={this.toggleSideMenu}/>
         <div
+          id="root-container"
           style={{
           margin: '0 auto',
           maxWidth: 1800,

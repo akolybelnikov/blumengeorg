@@ -13,7 +13,7 @@
 }
 
 .order-button {
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 768px) {
     display: none !important;
   }
   &:hover {
@@ -21,8 +21,14 @@
   }
 }
 
-.level-icon {
-  @media screen and (min-width: 768px) {
+.page-icon {
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+}
+
+.breadcrumb {
+  @media screen and (min-width: 768px) and (max-width: 769px) and (orientation: portrait) {
     display: none;
   }
 }

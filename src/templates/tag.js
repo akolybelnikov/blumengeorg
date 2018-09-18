@@ -34,9 +34,9 @@ export default class ProductPage extends Component {
                 </section>
                 <a
                     href="tel:00491797319455"
-                    className="button is-primary is-outlined is-inverted level-item is-fullwidth is-hidden-tablet"
+                    className="button is-primary is-outlined is-inverted level-item is-hidden-tablet"
                     style={{
-                    margin: '2rem 0 -1.5rem 0'
+                    margin: '0 auto'
                 }}
                     aria-label="telephone number of Blumen Georg">
                     <span className="icon">

@@ -57,7 +57,7 @@ const Breadcrumb = props => {
                     </nav>
                 </div>
                 <div className="level-right">
-                    <div className="level-icon">
+                    <div className="page-icon">
                         <PageIcon pathname={props.pathname}/>
                     </div>
                     <a
