@@ -49,6 +49,7 @@ const Header = props => {
             alignSelf: 'center',
             marginRight: '2rem'
           }}
+            id="contact-link"
             className="navbar-item is-hidden-mobile button is-primary is-outlined is-inverted is-medium"
             to="contact">
             <span className="icon"><MapMarker

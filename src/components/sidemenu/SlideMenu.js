@@ -35,7 +35,8 @@ const SlideMenu = props => {
     <Sidebar native state={state}>
       {({x}) => (
         <animated.div
-          className="has-navbar-fixed-bottom"
+          onTouchMove={e => {console.log(e); e.preventDefault()}}
+          className="has-navbar-fixed-bottom animated-div"
           style={{
           top: 0,
           padding: '10px 15px',

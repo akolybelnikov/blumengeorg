@@ -16,3 +16,9 @@
 .nested-submenu-item {
   margin-bottom: 5px;
 }
+
+.animated-div {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  touch-action: none;
+}
