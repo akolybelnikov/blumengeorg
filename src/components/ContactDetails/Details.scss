@@ -6,11 +6,18 @@
     border: 5px solid rgba(101,55,148,1);
     border-radius: 5px;
 
-    @media screen and (max-width: 580px) {
+    @media screen and (max-width: 320px) {
       width: 90% !important;
       height: 65vh !important;
       left: 5%;
-      top: 160px;
+      top: 120px;
+    }
+
+    @media screen and (min-width: 321px) and (max-width: 580px) {
+      width: 90% !important;
+      height: 65vh !important;
+      left: 5%;
+      top: 150px;
     }
     @media screen and (max-width: 823px) and (orientation: landscape) {
       height: 60% !important;
