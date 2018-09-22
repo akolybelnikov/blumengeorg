@@ -35,8 +35,8 @@ const PageIcon = ({pathname}) => {
 const Breadcrumb = props => {
     return (
         <section className="section breadcrumb-section">
-            <div className="level is-mobile">
-                <div className="level-left">
+            <div className="columns is-mobile">
+                <div className="column is-half">
                     <nav className="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
                         <ul>
                             <li>
@@ -56,7 +56,7 @@ const Breadcrumb = props => {
                         </ul>
                     </nav>
                 </div>
-                <div className="level-right">
+                <div className="column is-half has-text-right is-pulled-right">
                     <div className="page-icon">
                         <PageIcon pathname={props.pathname}/>
                     </div>
