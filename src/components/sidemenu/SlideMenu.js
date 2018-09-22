@@ -35,8 +35,7 @@ const SlideMenu = props => {
     <Sidebar native state={state}>
       {({x}) => (
         <animated.div
-          onTouchMove={e => e.preventDefault()}
-          className="animated-div modal"
+          className="animated-div"
           style={{
           top: 0,
           padding: '10px 15px',
@@ -47,18 +46,16 @@ const SlideMenu = props => {
           zIndex: 1000,
           transform: x.interpolate(x => `translate3d(${x}%,0,0)`)
         }}>
-          <div className="modal-content">
-            <NestedMenu visible={true} toggle={toggle}/>
-            <div
-              onClick={toggle}
-              style={{
-              cursor: 'pointer',
-              top: 10,
-              right: 10,
-              position: 'fixed'
-            }}>
-              <IconBurgerMenu open={state}/>
-            </div>
+          <NestedMenu visible={true} toggle={toggle}/>
+          <div
+            onClick={toggle}
+            style={{
+            cursor: 'pointer',
+            top: 10,
+            right: 10,
+            position: 'fixed'
+          }}>
+            <IconBurgerMenu open={state}/>
             <nav className="navbar is-fixed-bottom">
               <div className="level is-mobile">
                 <div

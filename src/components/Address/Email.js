@@ -12,7 +12,7 @@ const Email = props => {
                 <span style={{marginRight: '10px'}} className="icon">
                     <Envelope width="24" height="24" fill="whitesmoke"/>
                 </span>
-                <span>blumengeorg@gmail.com</span>
+                <span>georgsblumen1@gmail.com</span>
             </a>
         </div>
     )
