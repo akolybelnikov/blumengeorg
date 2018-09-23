@@ -2,6 +2,7 @@ import React from 'react'
 import {Keyframes, animated, config} from 'react-spring'
 import delay from 'delay'
 import NestedMenu from './NestedMenu'
+import MenuBar from '../Menu'
 import LogoLetters from '../svg/LogoLetters'
 import IconBurgerMenu from '../icons/IconBurgerMenu'
 
@@ -46,7 +47,7 @@ const SlideMenu = props => {
           zIndex: 1000,
           transform: x.interpolate(x => `translate3d(${x}%,0,0)`)
         }}>
-          <NestedMenu visible={true} toggle={toggle}/>
+        <MenuBar />
           <div
             onClick={toggle}
             style={{

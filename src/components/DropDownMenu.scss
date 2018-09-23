@@ -1,6 +1,9 @@
 #wrapper {
   cursor: pointer;
   min-width: 150px;
+  @media screen and (max-width: 480px) {
+    min-width: 0px;
+  }
 }
 
 #header-title {
@@ -9,6 +12,9 @@
     color: #663399 !important;
   }
   min-width: 150px;
+  @media screen and (max-width: 480px) {
+    min-width: 0px;
+  }
 }
 
 #dropdown-list {

@@ -56,13 +56,13 @@ const Breadcrumb = props => {
                         </ul>
                     </nav>
                 </div>
-                <div className="column is-half has-text-right is-pulled-right">
+                <div className="column is-half has-text-right">
                     <div className="page-icon">
                         <PageIcon pathname={props.pathname}/>
                     </div>
                     <a
                         href="tel:00491797319455"
-                        className="button is-primary is-outlined is-inverted level-item order-button"
+                        className="button is-primary is-outlined is-inverted level-item order-button is-pulled-right"
                         aria-label="telephone number of Blumen Georg">
                         <span className="icon">
                             <Phone width="24" height="24" fill="whitesmoke"/>

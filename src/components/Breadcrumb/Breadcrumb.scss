@@ -29,7 +29,9 @@
 }
 
 .breadcrumb li {
-  width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
 }
 
 .columns.is-mobile {

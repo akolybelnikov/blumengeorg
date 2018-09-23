@@ -7,7 +7,7 @@ const DropdownMenu = props => {
   const {list, title, listOpen, toggleList} = props
 
   return (
-    <div id="wrapper">
+    <nav className="navbar">
       <div className="navbar-item has-dropdown" onClick={toggleList}>
         <div role="menuitem" aria-label="dropdown menu header" className="navbar-link" id="header-title">{title}</div>
       </div>
@@ -20,7 +20,7 @@ const DropdownMenu = props => {
             ))}
         </div>
       }
-    </div>
+    </nav>
   )
 
 }
