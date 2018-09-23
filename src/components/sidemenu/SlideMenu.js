@@ -2,7 +2,6 @@ import React from 'react'
 import {Keyframes, animated, config} from 'react-spring'
 import delay from 'delay'
 import NestedMenu from './NestedMenu'
-import MenuBar from '../Menu'
 import LogoLetters from '../svg/LogoLetters'
 import IconBurgerMenu from '../icons/IconBurgerMenu'
 
@@ -28,6 +27,9 @@ const Sidebar = Keyframes.Spring({
 })
 
 const SlideMenu = props => {
+  const classes = props.open
+    ? 'is-active animated-div modal'
+    : 'animated-div modal'
   const state = props.open
     ? 'open'
     : 'closed'
@@ -36,27 +38,27 @@ const SlideMenu = props => {
     <Sidebar native state={state}>
       {({x}) => (
         <animated.div
-          className="animated-div"
+          className={classes}
           style={{
-          top: 0,
-          padding: '10px 15px',
-          position: 'fixed',
-          height: '100%',
-          width: '100%',
-          background: 'rgba(0,0,0,1)',
           zIndex: 1000,
           transform: x.interpolate(x => `translate3d(${x}%,0,0)`)
         }}>
-        <MenuBar />
           <div
-            onClick={toggle}
+            className="modal-background"
             style={{
-            cursor: 'pointer',
-            top: 10,
-            right: 10,
-            position: 'fixed'
-          }}>
-            <IconBurgerMenu open={state}/>
+            background: 'black'
+          }}></div>
+          <div className="modal-content">
+            <div
+              onClick={toggle}
+              style={{
+              cursor: 'pointer',
+              top: 10,
+              right: 10,
+              position: 'fixed'
+            }}>
+              <IconBurgerMenu open={state}/>
+            </div>
             <nav className="navbar is-fixed-bottom">
               <div className="level is-mobile">
                 <div
@@ -69,8 +71,8 @@ const SlideMenu = props => {
                 </div>
                 <div className="lavel-item">
                   {/** <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
-                        <Letters width="5%" fill="white"/>
-                    </div> **/}
+                      <Letters width="5%" fill="white"/>
+                  </div> **/}
                 </div>
               </div>
             </nav>
