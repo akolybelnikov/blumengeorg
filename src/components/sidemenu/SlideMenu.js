@@ -49,6 +49,7 @@ const SlideMenu = props => {
             background: 'black'
           }}></div>
           <div className="modal-content">
+          <NestedMenu visible={true} toggle={toggle}/>
             <div
               onClick={toggle}
               style={{
@@ -59,6 +60,7 @@ const SlideMenu = props => {
             }}>
               <IconBurgerMenu open={state}/>
             </div>
+            
             <nav className="navbar is-fixed-bottom">
               <div className="level is-mobile">
                 <div
