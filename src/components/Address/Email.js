@@ -8,7 +8,7 @@ const Email = props => {
             <a
                 id="email-address"
                 className="button is-primary is-inverted is-outlined is-fullwidth"
-                href="mailto:blumengeorg@gmail.com">
+                href="mailto:georgsblumen1@gmail.com">
                 <span style={{marginRight: '10px'}} className="icon">
                     <Envelope width="24" height="24" fill="whitesmoke"/>
                 </span>

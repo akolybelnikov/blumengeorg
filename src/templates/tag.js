@@ -6,11 +6,12 @@ import './tag.scss'
 import EmptyPage from '../components/EmptyPage/EmptyPage'
 import Phone from '../components/icons/Phone'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
+import LazyLoad from 'react-lazy-load'
 
 export default class ProductPage extends Component {
     render() {
         return (
-            <Layout location={this.props.location} justifyContent={'center'} >
+            <Layout location={this.props.location} justifyContent={'center'}>
                 <Breadcrumb pathname={this.props.location.pathname}/>
                 <section id="products-section" className="section">
                     {this.props.data.allContentfulProduct
@@ -20,14 +21,17 @@ export default class ProductPage extends Component {
                             .allContentfulProduct
                             .edges
                             .map(edge => (
-                                <div key={edge.node.id} className="product-section-item">
+                                <LazyLoad
+                                    offsetVertical={300}
+                                    key={edge.node.id}
+                                    className="product-section-item">
                                     <ProductCard
                                         priceS={edge.node.priceS}
                                         priceM={edge.node.priceM}
                                         priceL={edge.node.priceL}
                                         title={edge.node.name}
                                         fluid={edge.node.img.fluid}/>
-                                </div>
+                                </LazyLoad>
                             ))
                         : <EmptyPage/>
 }

@@ -1,6 +1,6 @@
-.columns {
+.columns.sidemenu-columns, .columns.is-mobile.sidemenu-columns {
   height: 100%;
-  align-items: flex-start;
+  align-items: flex-start !important;
 }
 
 .nested-menu-item {

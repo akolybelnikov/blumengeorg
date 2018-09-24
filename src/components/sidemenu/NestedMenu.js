@@ -42,7 +42,7 @@ export default class NestedMenu extends PureComponent {
     const { openKey } = this.state
 
     return (
-      <div className="columns is-mobile">
+      <div className="columns is-mobile sidemenu-columns">
         {!visible ? null : (
           <Fragment>                 
             <div className="column is-one-third">
