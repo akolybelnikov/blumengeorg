@@ -42,10 +42,10 @@ export default class NestedMenu extends PureComponent {
     const { openKey } = this.state
 
     return (
-      <div id="nested-menu-container">
+      <div className="columns is-mobile">
         {!visible ? null : (
           <Fragment>                 
-            <div>
+            <div className="column is-one-third">
               {items.map((item, i) => (
                 <button className="button is-primary is-medium is-fullwidth nested-menu-item" 
                   onClick={this.onOpenChange}
@@ -56,7 +56,7 @@ export default class NestedMenu extends PureComponent {
               ))} 
             </div>           
             {openKey !== undefined ? (
-              <div id="nested-menu-submenu" className="panel">                  
+              <div id="nested-menu-submenu" className="panel column is-two-third">                  
                 {navitems[openKey].map(submenuitem => (
                   <Link
                     className="panel-block button is-link is-info nested-submenu-item"

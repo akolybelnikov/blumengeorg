@@ -28,60 +28,47 @@ const Sidebar = Keyframes.Spring({
 
 const SlideMenu = props => {
   const classes = props.open
-    ? 'is-active animated-div modal'
-    : 'animated-div modal'
+    ? 'is-active modal'
+    : 'modal'
   const state = props.open
     ? 'open'
     : 'closed'
   const {toggle} = props
   return (
-    <Sidebar native state={state}>
-      {({x}) => (
-        <animated.div
-          className={classes}
+    <div className={classes}>
+      <div className="modal-background"></div>
+      <div className="modal-content">
+        <NestedMenu visible={true} toggle={toggle}/>
+        <div
+          onClick={toggle}
           style={{
-          zIndex: 1000,
-          transform: x.interpolate(x => `translate3d(${x}%,0,0)`)
+          cursor: 'pointer',
+          top: 10,
+          right: 10,
+          position: 'fixed'
         }}>
-          <div
-            className="modal-background"
-            style={{
-            background: 'black'
-          }}></div>
-          <div className="modal-content">
-          <NestedMenu visible={true} toggle={toggle}/>
+          <IconBurgerMenu open={state}/>
+        </div>
+
+        <nav className="navbar is-fixed-bottom">
+          <div className="level is-mobile">
             <div
-              onClick={toggle}
+              className="level-item"
               style={{
-              cursor: 'pointer',
-              top: 10,
-              right: 10,
-              position: 'fixed'
+              margin: '10px 0',
+              flexGrow: 0
             }}>
-              <IconBurgerMenu open={state}/>
+              <LogoLetters height="80" fill="whitesmoke"/>
             </div>
-            
-            <nav className="navbar is-fixed-bottom">
-              <div className="level is-mobile">
-                <div
-                  className="level-item"
-                  style={{
-                  margin: '10px 0',
-                  flexGrow: 0
-                }}>
-                  <LogoLetters height="80" fill="whitesmoke"/>
-                </div>
-                <div className="lavel-item">
-                  {/** <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+            <div className="lavel-item">
+              {/** <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
                       <Letters width="5%" fill="white"/>
                   </div> **/}
-                </div>
-              </div>
-            </nav>
+            </div>
           </div>
-        </animated.div>
-      )}
-    </Sidebar>
+        </nav>
+      </div>
+    </div>
   )
 }
 
