@@ -1,11 +1,8 @@
 .breadcrumb-section {
   padding: 1rem;
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     padding: 0;
-  }
-  @media screen and (min-width: 321px) and (max-width: 480px) {
     margin-top: -20px;
-    padding: 0 .5rem;
   }
   @media screen and (min-width: 1025px) {
     padding-bottom: 0;
