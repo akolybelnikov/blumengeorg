@@ -30,7 +30,7 @@ class ParallaxPage extends React.PureComponent {
 
                 <ParallaxLayer
                     offset={0.05}
-                    speed={-.6}
+                    speed={0.3}
                     backgroundposition={'top 0 left 0'}
                     backgroundsize={'50%'}
                     backgroundrepeat={'repeat-x'}

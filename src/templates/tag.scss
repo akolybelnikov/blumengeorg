@@ -16,12 +16,12 @@
 .product-section-item {
     min-width: 20%;
     margin: 10px;
-    flex-grow: 1;
+    flex-grow: 0;
     @media all and (max-width: 414px) {
         min-width: 100%;
     }
-    @media all and (max-width: 824px) and (orientation: landscape) {
-        max-width: 48%;
+    @media all and (max-width: 824px) {
+        max-width: 45%;
     }
     @media all and (min-width: 1024px) {
         max-width: 30%;

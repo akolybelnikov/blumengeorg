@@ -7,6 +7,8 @@ import EmptyPage from '../components/EmptyPage/EmptyPage'
 import Phone from '../components/icons/Phone'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 import LazyLoad from 'react-lazy-load'
+import Square from '../components/icons/Square'
+import Squares from '../components/icons/Squares'
 
 export default class ProductPage extends Component {
     render() {
@@ -22,6 +24,7 @@ export default class ProductPage extends Component {
                             .edges
                             .map(edge => (
                                 <LazyLoad
+                                    style={{ minWidth: '50%' }}
                                     offsetVertical={300}
                                     key={edge.node.id}
                                     className="product-section-item">
