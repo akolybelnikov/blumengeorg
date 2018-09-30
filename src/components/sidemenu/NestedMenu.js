@@ -45,7 +45,7 @@ export default class NestedMenu extends PureComponent {
       <div className="columns is-mobile sidemenu-columns">
         {!visible ? null : (
           <Fragment>                 
-            <div className="column is-one-third">
+            <div className="column">
               {items.map((item, i) => (
                 <button className="button is-primary is-medium is-fullwidth nested-menu-item" 
                   onClick={this.onOpenChange}
@@ -56,7 +56,7 @@ export default class NestedMenu extends PureComponent {
               ))} 
             </div>           
             {openKey !== undefined ? (
-              <div id="nested-menu-submenu" className="panel column is-two-third">                  
+              <div id="nested-menu-submenu" className="panel column">                  
                 {navitems[openKey].map(submenuitem => (
                   <Link
                     className="panel-block button is-link is-info nested-submenu-item"

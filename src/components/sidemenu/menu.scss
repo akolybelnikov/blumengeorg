@@ -1,6 +1,7 @@
 .columns.sidemenu-columns, .columns.is-mobile.sidemenu-columns {
   height: 100%;
   align-items: flex-start !important;
+  margin-top: 70px;
 }
 
 .nested-menu-item {
@@ -10,6 +11,7 @@
 
 #nested-menu-submenu {
   z-index: 600;
+  width: 50%;
 }
 
 .nested-submenu-item {
@@ -28,4 +30,14 @@
   @media screen and (min-width: 1024px) {
     max-width: 75%;
   }
+}
+
+div.level.is-mobile {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+}
+
+.logo {
+  margin: 10px 0px;
 }

@@ -69,7 +69,7 @@
 }
 
 .button.is-primary.is-inverted.is-outlined, .button.is-primary.is-inverted.is-outlined.is-fullwidth {
-  &:focus {
+  &:focus, &:active {
     color: whitesmoke;
     border-color: whitesmoke;
     background-color: black !important;
