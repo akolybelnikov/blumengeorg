@@ -67,3 +67,11 @@
   align-self: center;
   justify-self: center;
 }
+
+.button.is-primary.is-inverted.is-outlined, .button.is-primary.is-inverted.is-outlined.is-fullwidth {
+  &:focus {
+    color: whitesmoke;
+    border-color: whitesmoke;
+    background-color: black !important;
+  }
+}
